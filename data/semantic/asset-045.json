@@ -1,0 +1,46 @@
+{
+  "id": "doc-045",
+  "name": "Separator O045",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Standard separator for auxiliary support in Region05. Maintained by Mitsubishi.",
+  "region": "Region05",
+  "tags": [
+    {
+      "name": "TAG-8830",
+      "alias": "Alias_TAG-8830",
+      "description": "Measurement tag for TAG-8830",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2914",
+      "alias": "Alias_TAG-2914",
+      "description": "Measurement tag for TAG-2914",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2013-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "doc-064",
+  "name": "Turbine B064",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Turbine designed for extreme conditions in Region05.",
+  "region": "Region05",
+  "tags": [
+    {
+      "name": "TAG-9066",
+      "alias": "Alias_TAG-9066",
+      "description": "Measurement tag for TAG-9066",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6487",
+      "alias": "Alias_TAG-6487",
+      "description": "Measurement tag for TAG-6487",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4009",
+      "alias": "Alias_TAG-4009",
+      "description": "Measurement tag for TAG-4009",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-546",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-546",
+      "alias": "S_Stream-546",
+      "datahubstreamid": "dh-10421",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-651",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-651",
+      "alias": "S_Stream-651",
+      "datahubstreamid": "dh-94071",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-148",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-148",
+      "alias": "S_Stream-148",
+      "datahubstreamid": "dh-19355",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2016-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

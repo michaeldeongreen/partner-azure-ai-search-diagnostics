@@ -1,0 +1,76 @@
+{
+  "id": "doc-082",
+  "name": "Heat Exchanger D082",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Heat Exchanger designed for extreme conditions in Region02.",
+  "region": "Region02",
+  "tags": [
+    {
+      "name": "TAG-6685",
+      "alias": "Alias_TAG-6685",
+      "description": "Measurement tag for TAG-6685",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4933",
+      "alias": "Alias_TAG-4933",
+      "description": "Measurement tag for TAG-4933",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4722",
+      "alias": "Alias_TAG-4722",
+      "description": "Measurement tag for TAG-4722",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3237",
+      "alias": "Alias_TAG-3237",
+      "description": "Measurement tag for TAG-3237",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-417",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-417",
+      "alias": "S_Stream-417",
+      "datahubstreamid": "dh-46384",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2010-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

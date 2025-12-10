@@ -1,0 +1,73 @@
+{
+  "id": "doc-084",
+  "name": "Pump S084",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Ingersoll Rand Pump unit operating in Region11. Critical for process flow.",
+  "region": "Region11",
+  "tags": [
+    {
+      "name": "TAG-7146",
+      "alias": "Alias_TAG-7146",
+      "description": "Measurement tag for TAG-7146",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8505",
+      "alias": "Alias_TAG-8505",
+      "description": "Measurement tag for TAG-8505",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9535",
+      "alias": "Alias_TAG-9535",
+      "description": "Measurement tag for TAG-9535",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6015",
+      "alias": "Alias_TAG-6015",
+      "description": "Measurement tag for TAG-6015",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6500",
+      "alias": "Alias_TAG-6500",
+      "description": "Measurement tag for TAG-6500",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2016-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

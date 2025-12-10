@@ -1,0 +1,73 @@
+{
+  "id": "doc-046",
+  "name": "Pump S046",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Mitsubishi Pump unit operating in Region16. Critical for process flow.",
+  "region": "Region16",
+  "tags": [
+    {
+      "name": "TAG-4493",
+      "alias": "Alias_TAG-4493",
+      "description": "Measurement tag for TAG-4493",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3365",
+      "alias": "Alias_TAG-3365",
+      "description": "Measurement tag for TAG-3365",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3870",
+      "alias": "Alias_TAG-3870",
+      "description": "Measurement tag for TAG-3870",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3241",
+      "alias": "Alias_TAG-3241",
+      "description": "Measurement tag for TAG-3241",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7258",
+      "alias": "Alias_TAG-7258",
+      "description": "Measurement tag for TAG-7258",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2012-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "doc-096",
+  "name": "Compressor R096",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Standard compressor for auxiliary support in Region02. Maintained by Siemens.",
+  "region": "Region02",
+  "tags": [
+    {
+      "name": "TAG-8407",
+      "alias": "Alias_TAG-8407",
+      "description": "Measurement tag for TAG-8407",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8566",
+      "alias": "Alias_TAG-8566",
+      "description": "Measurement tag for TAG-8566",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1509",
+      "alias": "Alias_TAG-1509",
+      "description": "Measurement tag for TAG-1509",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-552",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-552",
+      "alias": "S_Stream-552",
+      "datahubstreamid": "dh-86453",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-749",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-749",
+      "alias": "S_Stream-749",
+      "datahubstreamid": "dh-45653",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2011-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

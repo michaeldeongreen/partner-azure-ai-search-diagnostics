@@ -1,0 +1,96 @@
+{
+  "id": "doc-100",
+  "name": "Separator S100",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Atlas Copco Separator unit operating in Region07. Critical for process flow.",
+  "region": "Region07",
+  "tags": [
+    {
+      "name": "TAG-1780",
+      "alias": "Alias_TAG-1780",
+      "description": "Measurement tag for TAG-1780",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7589",
+      "alias": "Alias_TAG-7589",
+      "description": "Measurement tag for TAG-7589",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1395",
+      "alias": "Alias_TAG-1395",
+      "description": "Measurement tag for TAG-1395",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6116",
+      "alias": "Alias_TAG-6116",
+      "description": "Measurement tag for TAG-6116",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4288",
+      "alias": "Alias_TAG-4288",
+      "description": "Measurement tag for TAG-4288",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-455",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-455",
+      "alias": "S_Stream-455",
+      "datahubstreamid": "dh-44817",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-711",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-711",
+      "alias": "S_Stream-711",
+      "datahubstreamid": "dh-97340",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2018-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

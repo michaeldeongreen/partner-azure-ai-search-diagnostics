@@ -1,0 +1,49 @@
+{
+  "id": "doc-093",
+  "name": "Heat Exchanger N093",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Heat Exchanger designed for extreme conditions in Region19.",
+  "region": "Region19",
+  "tags": [
+    {
+      "name": "TAG-2375",
+      "alias": "Alias_TAG-2375",
+      "description": "Measurement tag for TAG-2375",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-915",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-915",
+      "alias": "S_Stream-915",
+      "datahubstreamid": "dh-98422",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2012-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

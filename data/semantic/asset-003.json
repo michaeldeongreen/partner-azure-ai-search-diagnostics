@@ -1,0 +1,76 @@
+{
+  "id": "doc-003",
+  "name": "Pump Q003",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Backup pump unit, model X-2000, located in Region17 sector.",
+  "region": "Region17",
+  "tags": [
+    {
+      "name": "TAG-4178",
+      "alias": "Alias_TAG-4178",
+      "description": "Measurement tag for TAG-4178",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1813",
+      "alias": "Alias_TAG-1813",
+      "description": "Measurement tag for TAG-1813",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2867",
+      "alias": "Alias_TAG-2867",
+      "description": "Measurement tag for TAG-2867",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6047",
+      "alias": "Alias_TAG-6047",
+      "description": "Measurement tag for TAG-6047",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-157",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-157",
+      "alias": "S_Stream-157",
+      "datahubstreamid": "dh-74512",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2010-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

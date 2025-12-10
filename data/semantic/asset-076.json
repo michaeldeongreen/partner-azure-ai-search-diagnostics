@@ -1,0 +1,96 @@
+{
+  "id": "doc-076",
+  "name": "Pump K076",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Standard pump for auxiliary support in Region18. Maintained by Ingersoll Rand.",
+  "region": "Region18",
+  "tags": [
+    {
+      "name": "TAG-2060",
+      "alias": "Alias_TAG-2060",
+      "description": "Measurement tag for TAG-2060",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9290",
+      "alias": "Alias_TAG-9290",
+      "description": "Measurement tag for TAG-9290",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9447",
+      "alias": "Alias_TAG-9447",
+      "description": "Measurement tag for TAG-9447",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1140",
+      "alias": "Alias_TAG-1140",
+      "description": "Measurement tag for TAG-1140",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8352",
+      "alias": "Alias_TAG-8352",
+      "description": "Measurement tag for TAG-8352",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-184",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-184",
+      "alias": "S_Stream-184",
+      "datahubstreamid": "dh-63882",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-805",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-805",
+      "alias": "S_Stream-805",
+      "datahubstreamid": "dh-42520",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2018-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

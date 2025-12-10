@@ -1,0 +1,37 @@
+{
+  "id": "doc-097",
+  "name": "Heat Exchanger G097",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "A high-efficiency heat exchanger manufactured by Atlas Copco. Located in Region15.",
+  "region": "Region15",
+  "tags": [
+    {
+      "name": "TAG-1047",
+      "alias": "Alias_TAG-1047",
+      "description": "Measurement tag for TAG-1047",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

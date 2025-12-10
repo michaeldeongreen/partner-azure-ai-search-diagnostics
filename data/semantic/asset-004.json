@@ -1,0 +1,89 @@
+{
+  "id": "doc-004",
+  "name": "Turbine O004",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "A high-efficiency turbine manufactured by Atlas Copco. Located in Region10.",
+  "region": "Region10",
+  "tags": [
+    {
+      "name": "TAG-1439",
+      "alias": "Alias_TAG-1439",
+      "description": "Measurement tag for TAG-1439",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9024",
+      "alias": "Alias_TAG-9024",
+      "description": "Measurement tag for TAG-9024",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7190",
+      "alias": "Alias_TAG-7190",
+      "description": "Measurement tag for TAG-7190",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-299",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-299",
+      "alias": "S_Stream-299",
+      "datahubstreamid": "dh-38182",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-143",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-143",
+      "alias": "S_Stream-143",
+      "datahubstreamid": "dh-60351",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-389",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-389",
+      "alias": "S_Stream-389",
+      "datahubstreamid": "dh-78153",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2016-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

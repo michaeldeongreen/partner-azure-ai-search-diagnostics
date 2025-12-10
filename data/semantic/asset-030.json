@@ -1,0 +1,78 @@
+{
+  "id": "doc-030",
+  "name": "Separator Q030",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Standard separator for auxiliary support in Region15. Maintained by Mitsubishi.",
+  "region": "Region15",
+  "tags": [
+    {
+      "name": "TAG-4888",
+      "alias": "Alias_TAG-4888",
+      "description": "Measurement tag for TAG-4888",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2814",
+      "alias": "Alias_TAG-2814",
+      "description": "Measurement tag for TAG-2814",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1928",
+      "alias": "Alias_TAG-1928",
+      "description": "Measurement tag for TAG-1928",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-696",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-696",
+      "alias": "S_Stream-696",
+      "datahubstreamid": "dh-18868",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-752",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-752",
+      "alias": "S_Stream-752",
+      "datahubstreamid": "dh-61162",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2013-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "doc-068",
+  "name": "Valve O068",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "Backup valve unit, model X-2000, located in Region07 sector.",
+  "region": "Region07",
+  "tags": [
+    {
+      "name": "TAG-1248",
+      "alias": "Alias_TAG-1248",
+      "description": "Measurement tag for TAG-1248",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3948",
+      "alias": "Alias_TAG-3948",
+      "description": "Measurement tag for TAG-3948",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-189",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-189",
+      "alias": "S_Stream-189",
+      "datahubstreamid": "dh-77621",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2013-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

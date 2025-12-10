@@ -1,0 +1,60 @@
+{
+  "id": "doc-090",
+  "name": "Valve B090",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "A high-efficiency valve manufactured by Atlas Copco. Located in Region01.",
+  "region": "Region01",
+  "tags": [
+    {
+      "name": "TAG-2251",
+      "alias": "Alias_TAG-2251",
+      "description": "Measurement tag for TAG-2251",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-876",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-876",
+      "alias": "S_Stream-876",
+      "datahubstreamid": "dh-13617",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-394",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-394",
+      "alias": "S_Stream-394",
+      "datahubstreamid": "dh-94530",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2023-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

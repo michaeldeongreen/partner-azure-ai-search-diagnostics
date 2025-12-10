@@ -1,0 +1,73 @@
+{
+  "id": "doc-016",
+  "name": "Heat Exchanger Y016",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "Standard heat exchanger for auxiliary support in Region05. Maintained by Ingersoll Rand.",
+  "region": "Region05",
+  "tags": [
+    {
+      "name": "TAG-1993",
+      "alias": "Alias_TAG-1993",
+      "description": "Measurement tag for TAG-1993",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5764",
+      "alias": "Alias_TAG-5764",
+      "description": "Measurement tag for TAG-5764",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6147",
+      "alias": "Alias_TAG-6147",
+      "description": "Measurement tag for TAG-6147",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3878",
+      "alias": "Alias_TAG-3878",
+      "description": "Measurement tag for TAG-3878",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9068",
+      "alias": "Alias_TAG-9068",
+      "description": "Measurement tag for TAG-9068",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2014-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "doc-077",
+  "name": "Compressor Y077",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Siemens Compressor unit operating in Region05. Critical for process flow.",
+  "region": "Region05",
+  "tags": [
+    {
+      "name": "TAG-2738",
+      "alias": "Alias_TAG-2738",
+      "description": "Measurement tag for TAG-2738",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2023-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "doc-005",
+  "name": "Pump D005",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Standard pump for auxiliary support in Region13. Maintained by Mitsubishi.",
+  "region": "Region13",
+  "tags": [
+    {
+      "name": "TAG-6916",
+      "alias": "Alias_TAG-6916",
+      "description": "Measurement tag for TAG-6916",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6665",
+      "alias": "Alias_TAG-6665",
+      "description": "Measurement tag for TAG-6665",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9191",
+      "alias": "Alias_TAG-9191",
+      "description": "Measurement tag for TAG-9191",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1589",
+      "alias": "Alias_TAG-1589",
+      "description": "Measurement tag for TAG-1589",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-156",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-156",
+      "alias": "S_Stream-156",
+      "datahubstreamid": "dh-31199",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2016-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

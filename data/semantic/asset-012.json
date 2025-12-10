@@ -1,0 +1,78 @@
+{
+  "id": "doc-012",
+  "name": "Valve T012",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "A high-efficiency valve manufactured by Mitsubishi. Located in Region08.",
+  "region": "Region08",
+  "tags": [
+    {
+      "name": "TAG-6840",
+      "alias": "Alias_TAG-6840",
+      "description": "Measurement tag for TAG-6840",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9328",
+      "alias": "Alias_TAG-9328",
+      "description": "Measurement tag for TAG-9328",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9410",
+      "alias": "Alias_TAG-9410",
+      "description": "Measurement tag for TAG-9410",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-531",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-531",
+      "alias": "S_Stream-531",
+      "datahubstreamid": "dh-87280",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-759",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-759",
+      "alias": "S_Stream-759",
+      "datahubstreamid": "dh-84698",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2012-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

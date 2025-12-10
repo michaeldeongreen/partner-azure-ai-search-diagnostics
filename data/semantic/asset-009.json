@@ -1,0 +1,64 @@
+{
+  "id": "doc-009",
+  "name": "Turbine R009",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Turbine designed for extreme conditions in Region06.",
+  "region": "Region06",
+  "tags": [
+    {
+      "name": "TAG-1707",
+      "alias": "Alias_TAG-1707",
+      "description": "Measurement tag for TAG-1707",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1071",
+      "alias": "Alias_TAG-1071",
+      "description": "Measurement tag for TAG-1071",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7350",
+      "alias": "Alias_TAG-7350",
+      "description": "Measurement tag for TAG-7350",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5242",
+      "alias": "Alias_TAG-5242",
+      "description": "Measurement tag for TAG-5242",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2020-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

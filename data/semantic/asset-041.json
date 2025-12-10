@@ -1,0 +1,76 @@
+{
+  "id": "doc-041",
+  "name": "Turbine S041",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Turbine designed for extreme conditions in Region01.",
+  "region": "Region01",
+  "tags": [
+    {
+      "name": "TAG-2152",
+      "alias": "Alias_TAG-2152",
+      "description": "Measurement tag for TAG-2152",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3346",
+      "alias": "Alias_TAG-3346",
+      "description": "Measurement tag for TAG-3346",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5310",
+      "alias": "Alias_TAG-5310",
+      "description": "Measurement tag for TAG-5310",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1468",
+      "alias": "Alias_TAG-1468",
+      "description": "Measurement tag for TAG-1468",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-185",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-185",
+      "alias": "S_Stream-185",
+      "datahubstreamid": "dh-98249",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2019-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

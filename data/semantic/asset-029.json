@@ -1,0 +1,96 @@
+{
+  "id": "doc-029",
+  "name": "Separator F029",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Siemens Separator unit operating in Region13. Critical for process flow.",
+  "region": "Region13",
+  "tags": [
+    {
+      "name": "TAG-1894",
+      "alias": "Alias_TAG-1894",
+      "description": "Measurement tag for TAG-1894",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9749",
+      "alias": "Alias_TAG-9749",
+      "description": "Measurement tag for TAG-9749",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1226",
+      "alias": "Alias_TAG-1226",
+      "description": "Measurement tag for TAG-1226",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4669",
+      "alias": "Alias_TAG-4669",
+      "description": "Measurement tag for TAG-4669",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8639",
+      "alias": "Alias_TAG-8639",
+      "description": "Measurement tag for TAG-8639",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-288",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-288",
+      "alias": "S_Stream-288",
+      "datahubstreamid": "dh-94145",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-963",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-963",
+      "alias": "S_Stream-963",
+      "datahubstreamid": "dh-95549",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2011-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

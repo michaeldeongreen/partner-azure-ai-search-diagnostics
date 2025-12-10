@@ -1,0 +1,71 @@
+{
+  "id": "doc-061",
+  "name": "Turbine L061",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Standard turbine for auxiliary support in Region04. Maintained by GE.",
+  "region": "Region04",
+  "tags": [
+    {
+      "name": "TAG-3337",
+      "alias": "Alias_TAG-3337",
+      "description": "Measurement tag for TAG-3337",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-252",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-252",
+      "alias": "S_Stream-252",
+      "datahubstreamid": "dh-39718",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-852",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-852",
+      "alias": "S_Stream-852",
+      "datahubstreamid": "dh-76531",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-169",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-169",
+      "alias": "S_Stream-169",
+      "datahubstreamid": "dh-19410",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2022-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

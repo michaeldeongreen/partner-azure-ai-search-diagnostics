@@ -1,0 +1,78 @@
+{
+  "id": "doc-019",
+  "name": "Separator D019",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Atlas Copco Separator unit operating in Region04. Critical for process flow.",
+  "region": "Region04",
+  "tags": [
+    {
+      "name": "TAG-5047",
+      "alias": "Alias_TAG-5047",
+      "description": "Measurement tag for TAG-5047",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6355",
+      "alias": "Alias_TAG-6355",
+      "description": "Measurement tag for TAG-6355",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8637",
+      "alias": "Alias_TAG-8637",
+      "description": "Measurement tag for TAG-8637",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-850",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-850",
+      "alias": "S_Stream-850",
+      "datahubstreamid": "dh-71042",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-337",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-337",
+      "alias": "S_Stream-337",
+      "datahubstreamid": "dh-83082",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

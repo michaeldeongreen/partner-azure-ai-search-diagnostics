@@ -1,0 +1,107 @@
+{
+  "id": "doc-051",
+  "name": "Pump I051",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "A high-efficiency pump manufactured by Mitsubishi. Located in Region03.",
+  "region": "Region03",
+  "tags": [
+    {
+      "name": "TAG-4186",
+      "alias": "Alias_TAG-4186",
+      "description": "Measurement tag for TAG-4186",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5344",
+      "alias": "Alias_TAG-5344",
+      "description": "Measurement tag for TAG-5344",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5280",
+      "alias": "Alias_TAG-5280",
+      "description": "Measurement tag for TAG-5280",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5876",
+      "alias": "Alias_TAG-5876",
+      "description": "Measurement tag for TAG-5876",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1985",
+      "alias": "Alias_TAG-1985",
+      "description": "Measurement tag for TAG-1985",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-195",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-195",
+      "alias": "S_Stream-195",
+      "datahubstreamid": "dh-50337",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-328",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-328",
+      "alias": "S_Stream-328",
+      "datahubstreamid": "dh-76857",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-859",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-859",
+      "alias": "S_Stream-859",
+      "datahubstreamid": "dh-49086",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "doc-014",
+  "name": "Turbine X014",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Backup turbine unit, model X-2000, located in Region12 sector.",
+  "region": "Region12",
+  "tags": [
+    {
+      "name": "TAG-9733",
+      "alias": "Alias_TAG-9733",
+      "description": "Measurement tag for TAG-9733",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1049",
+      "alias": "Alias_TAG-1049",
+      "description": "Measurement tag for TAG-1049",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9231",
+      "alias": "Alias_TAG-9231",
+      "description": "Measurement tag for TAG-9231",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3477",
+      "alias": "Alias_TAG-3477",
+      "description": "Measurement tag for TAG-3477",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-151",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-151",
+      "alias": "S_Stream-151",
+      "datahubstreamid": "dh-11556",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-936",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-936",
+      "alias": "S_Stream-936",
+      "datahubstreamid": "dh-35549",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2016-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

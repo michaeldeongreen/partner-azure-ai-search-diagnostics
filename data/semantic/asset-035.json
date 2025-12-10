@@ -1,0 +1,85 @@
+{
+  "id": "doc-035",
+  "name": "Heat Exchanger D035",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Heat Exchanger designed for extreme conditions in Region07.",
+  "region": "Region07",
+  "tags": [
+    {
+      "name": "TAG-3267",
+      "alias": "Alias_TAG-3267",
+      "description": "Measurement tag for TAG-3267",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8124",
+      "alias": "Alias_TAG-8124",
+      "description": "Measurement tag for TAG-8124",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1430",
+      "alias": "Alias_TAG-1430",
+      "description": "Measurement tag for TAG-1430",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4671",
+      "alias": "Alias_TAG-4671",
+      "description": "Measurement tag for TAG-4671",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8398",
+      "alias": "Alias_TAG-8398",
+      "description": "Measurement tag for TAG-8398",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-905",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-905",
+      "alias": "S_Stream-905",
+      "datahubstreamid": "dh-27172",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2014-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

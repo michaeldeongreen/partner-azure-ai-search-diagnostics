@@ -1,0 +1,98 @@
+{
+  "id": "doc-025",
+  "name": "Heat Exchanger F025",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "Standard heat exchanger for auxiliary support in Region10. Maintained by GE.",
+  "region": "Region10",
+  "tags": [
+    {
+      "name": "TAG-6571",
+      "alias": "Alias_TAG-6571",
+      "description": "Measurement tag for TAG-6571",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5402",
+      "alias": "Alias_TAG-5402",
+      "description": "Measurement tag for TAG-5402",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3957",
+      "alias": "Alias_TAG-3957",
+      "description": "Measurement tag for TAG-3957",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5074",
+      "alias": "Alias_TAG-5074",
+      "description": "Measurement tag for TAG-5074",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-850",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-850",
+      "alias": "S_Stream-850",
+      "datahubstreamid": "dh-90693",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-351",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-351",
+      "alias": "S_Stream-351",
+      "datahubstreamid": "dh-33190",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-182",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-182",
+      "alias": "S_Stream-182",
+      "datahubstreamid": "dh-92363",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2014-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

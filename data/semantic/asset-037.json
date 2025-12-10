@@ -1,0 +1,37 @@
+{
+  "id": "doc-037",
+  "name": "Turbine B037",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Turbine designed for extreme conditions in Region05.",
+  "region": "Region05",
+  "tags": [
+    {
+      "name": "TAG-5299",
+      "alias": "Alias_TAG-5299",
+      "description": "Measurement tag for TAG-5299",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2022-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

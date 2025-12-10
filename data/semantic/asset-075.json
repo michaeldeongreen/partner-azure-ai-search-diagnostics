@@ -1,0 +1,49 @@
+{
+  "id": "doc-075",
+  "name": "Valve K075",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "A high-efficiency valve manufactured by Siemens. Located in Region06.",
+  "region": "Region06",
+  "tags": [
+    {
+      "name": "TAG-7530",
+      "alias": "Alias_TAG-7530",
+      "description": "Measurement tag for TAG-7530",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-743",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-743",
+      "alias": "S_Stream-743",
+      "datahubstreamid": "dh-27177",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

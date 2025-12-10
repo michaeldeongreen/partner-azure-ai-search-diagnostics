@@ -1,0 +1,60 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">BlazorApp</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="nav flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="status">
+                <span class="bi bi-activity" aria-hidden="true"></span> Status
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="ai-search-index">
+                <span class="bi bi-search" aria-hidden="true"></span> AI Search Index
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="upload-documents">
+                <span class="bi bi-cloud-upload" aria-hidden="true"></span> Upload Documents
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="prepare-hybrid-data">
+                <span class="bi bi-database-gear" aria-hidden="true"></span> Prepare Hybrid Data
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="chat">
+                <span class="bi bi-chat-dots" aria-hidden="true"></span> Chat (Search-First)
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="agentic-chat">
+                <span class="bi bi-robot" aria-hidden="true"></span> Chat (Agentic Tools)
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="hybrid-chat">
+                <span class="bi bi-stars" aria-hidden="true"></span> Chat (Hybrid + Agentic)
+            </NavLink>
+        </div>
+    </nav>
+</div>
+

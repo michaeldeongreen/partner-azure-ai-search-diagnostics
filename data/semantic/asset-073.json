@@ -1,0 +1,80 @@
+{
+  "id": "doc-073",
+  "name": "Pump P073",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Standard pump for auxiliary support in Region07. Maintained by Atlas Copco.",
+  "region": "Region07",
+  "tags": [
+    {
+      "name": "TAG-8158",
+      "alias": "Alias_TAG-8158",
+      "description": "Measurement tag for TAG-8158",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9686",
+      "alias": "Alias_TAG-9686",
+      "description": "Measurement tag for TAG-9686",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-254",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-254",
+      "alias": "S_Stream-254",
+      "datahubstreamid": "dh-35551",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-910",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-910",
+      "alias": "S_Stream-910",
+      "datahubstreamid": "dh-42822",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-306",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-306",
+      "alias": "S_Stream-306",
+      "datahubstreamid": "dh-88874",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2020-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

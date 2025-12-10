@@ -1,0 +1,89 @@
+{
+  "id": "doc-086",
+  "name": "Pump K086",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Pump designed for extreme conditions in Region12.",
+  "region": "Region12",
+  "tags": [
+    {
+      "name": "TAG-9218",
+      "alias": "Alias_TAG-9218",
+      "description": "Measurement tag for TAG-9218",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1517",
+      "alias": "Alias_TAG-1517",
+      "description": "Measurement tag for TAG-1517",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5182",
+      "alias": "Alias_TAG-5182",
+      "description": "Measurement tag for TAG-5182",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-807",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-807",
+      "alias": "S_Stream-807",
+      "datahubstreamid": "dh-24114",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-252",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-252",
+      "alias": "S_Stream-252",
+      "datahubstreamid": "dh-66979",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-635",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-635",
+      "alias": "S_Stream-635",
+      "datahubstreamid": "dh-16715",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2013-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

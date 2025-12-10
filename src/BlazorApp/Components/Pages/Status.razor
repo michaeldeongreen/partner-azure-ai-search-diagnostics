@@ -1,0 +1,210 @@
+@page "/status"
+@using BlazorApp.Services
+@inject ConnectionTestService ConnectionTest
+@rendermode InteractiveServer
+
+<PageTitle>Service Status</PageTitle>
+
+<h1>Azure Services Connection Status</h1>
+
+<p>Checking connectivity to deployed Azure services...</p>
+
+<div class="status-container">
+    <div class="status-card">
+        <h3>GPT-4.1</h3>
+        <div class="status-indicator @(gptStatus?.IsConnected == true ? "status-online" : "status-offline")">
+            @if (gptStatus == null)
+            {
+                <span>Checking...</span>
+            }
+            else
+            {
+                <span class="status-dot"></span>
+                <span>@(gptStatus.IsConnected ? "Connected" : "Disconnected")</span>
+            }
+        </div>
+        @if (gptStatus != null)
+        {
+            <p class="status-message">@gptStatus.Message</p>
+            <p class="status-time">Last checked: @gptStatus.LastChecked.ToString("HH:mm:ss")</p>
+        }
+    </div>
+
+    <div class="status-card">
+        <h3>Text Embedding 3 Large</h3>
+        <div class="status-indicator @(embeddingStatus?.IsConnected == true ? "status-online" : "status-offline")">
+            @if (embeddingStatus == null)
+            {
+                <span>Checking...</span>
+            }
+            else
+            {
+                <span class="status-dot"></span>
+                <span>@(embeddingStatus.IsConnected ? "Connected" : "Disconnected")</span>
+            }
+        </div>
+        @if (embeddingStatus != null)
+        {
+            <p class="status-message">@embeddingStatus.Message</p>
+            <p class="status-time">Last checked: @embeddingStatus.LastChecked.ToString("HH:mm:ss")</p>
+        }
+    </div>
+
+    <div class="status-card">
+        <h3>Azure AI Search</h3>
+        <div class="status-indicator @(searchStatus?.IsConnected == true ? "status-online" : "status-offline")">
+            @if (searchStatus == null)
+            {
+                <span>Checking...</span>
+            }
+            else
+            {
+                <span class="status-dot"></span>
+                <span>@(searchStatus.IsConnected ? "Connected" : "Disconnected")</span>
+            }
+        </div>
+        @if (searchStatus != null)
+        {
+            <p class="status-message">@searchStatus.Message</p>
+            <p class="status-time">Last checked: @searchStatus.LastChecked.ToString("HH:mm:ss")</p>
+        }
+    </div>
+</div>
+
+<button class="btn btn-primary" @onclick="RefreshStatus" disabled="@isRefreshing">
+    @if (isRefreshing)
+    {
+        <span>Refreshing...</span>
+    }
+    else
+    {
+        <span>Refresh Status</span>
+    }
+</button>
+
+@code {
+    private ServiceStatus? gptStatus;
+    private ServiceStatus? embeddingStatus;
+    private ServiceStatus? searchStatus;
+    private bool isRefreshing = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshStatus();
+    }
+
+    private async Task RefreshStatus()
+    {
+        isRefreshing = true;
+        StateHasChanged();
+
+        try
+        {
+            // Run all tests in parallel
+            var gptTask = ConnectionTest.TestGpt4ConnectionAsync();
+            var embeddingTask = ConnectionTest.TestEmbeddingConnectionAsync();
+            var searchTask = ConnectionTest.TestSearchConnectionAsync();
+
+            await Task.WhenAll(gptTask, embeddingTask, searchTask);
+
+            gptStatus = await gptTask;
+            embeddingStatus = await embeddingTask;
+            searchStatus = await searchTask;
+        }
+        finally
+        {
+            isRefreshing = false;
+            StateHasChanged();
+        }
+    }
+}
+
+<style>
+    .status-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+    }
+
+    .status-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .status-card h3 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .status-indicator {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin: 15px 0;
+    }
+
+    .status-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .status-online .status-dot {
+        background-color: #28a745;
+        box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+    }
+
+    .status-offline .status-dot {
+        background-color: #dc3545;
+        box-shadow: 0 0 8px rgba(220, 53, 69, 0.5);
+    }
+
+    .status-online {
+        color: #28a745;
+    }
+
+    .status-offline {
+        color: #dc3545;
+    }
+
+    .status-message {
+        color: #666;
+        font-size: 0.9em;
+        margin: 10px 0;
+    }
+
+    .status-time {
+        color: #999;
+        font-size: 0.85em;
+        font-style: italic;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .btn-primary:hover:not(:disabled) {
+        background-color: #0056b3;
+    }
+
+    .btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+</style>

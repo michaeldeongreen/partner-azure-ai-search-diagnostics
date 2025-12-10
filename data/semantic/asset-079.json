@@ -1,0 +1,78 @@
+{
+  "id": "doc-079",
+  "name": "Separator P079",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "A high-efficiency separator manufactured by Mitsubishi. Located in Region12.",
+  "region": "Region12",
+  "tags": [
+    {
+      "name": "TAG-2977",
+      "alias": "Alias_TAG-2977",
+      "description": "Measurement tag for TAG-2977",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4184",
+      "alias": "Alias_TAG-4184",
+      "description": "Measurement tag for TAG-4184",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5329",
+      "alias": "Alias_TAG-5329",
+      "description": "Measurement tag for TAG-5329",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-780",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-780",
+      "alias": "S_Stream-780",
+      "datahubstreamid": "dh-58208",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-491",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-491",
+      "alias": "S_Stream-491",
+      "datahubstreamid": "dh-33601",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2017-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

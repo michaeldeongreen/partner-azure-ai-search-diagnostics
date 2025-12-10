@@ -1,0 +1,71 @@
+{
+  "id": "doc-056",
+  "name": "Valve O056",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "Standard valve for auxiliary support in Region12. Maintained by Siemens.",
+  "region": "Region12",
+  "tags": [
+    {
+      "name": "TAG-7355",
+      "alias": "Alias_TAG-7355",
+      "description": "Measurement tag for TAG-7355",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-823",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-823",
+      "alias": "S_Stream-823",
+      "datahubstreamid": "dh-94013",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-847",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-847",
+      "alias": "S_Stream-847",
+      "datahubstreamid": "dh-47219",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-826",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-826",
+      "alias": "S_Stream-826",
+      "datahubstreamid": "dh-88773",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2011-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

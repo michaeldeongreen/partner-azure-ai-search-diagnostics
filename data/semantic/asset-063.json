@@ -1,0 +1,71 @@
+{
+  "id": "doc-063",
+  "name": "Heat Exchanger H063",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "Standard heat exchanger for auxiliary support in Region11. Maintained by GE.",
+  "region": "Region11",
+  "tags": [
+    {
+      "name": "TAG-7176",
+      "alias": "Alias_TAG-7176",
+      "description": "Measurement tag for TAG-7176",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-383",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-383",
+      "alias": "S_Stream-383",
+      "datahubstreamid": "dh-14071",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-789",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-789",
+      "alias": "S_Stream-789",
+      "datahubstreamid": "dh-50598",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-233",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-233",
+      "alias": "S_Stream-233",
+      "datahubstreamid": "dh-26950",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2018-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

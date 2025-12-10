@@ -1,0 +1,37 @@
+{
+  "id": "doc-007",
+  "name": "Compressor V007",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Backup compressor unit, model X-2000, located in Region18 sector.",
+  "region": "Region18",
+  "tags": [
+    {
+      "name": "TAG-5135",
+      "alias": "Alias_TAG-5135",
+      "description": "Measurement tag for TAG-5135",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2022-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

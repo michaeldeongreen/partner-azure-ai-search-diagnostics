@@ -1,0 +1,46 @@
+{
+  "id": "doc-049",
+  "name": "Compressor P049",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Siemens Compressor unit operating in Region10. Critical for process flow.",
+  "region": "Region10",
+  "tags": [
+    {
+      "name": "TAG-5683",
+      "alias": "Alias_TAG-5683",
+      "description": "Measurement tag for TAG-5683",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5517",
+      "alias": "Alias_TAG-5517",
+      "description": "Measurement tag for TAG-5517",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2015-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,120 @@
+@page "/chat"
+@using BlazorApp.Services
+@using BlazorApp.Services.Strategies
+@inject IAzureSearchIndexService IndexService
+@inject SearchStrategyFactory StrategyFactory
+@rendermode InteractiveServer
+
+<PageTitle>Chat</PageTitle>
+
+<div class="container-fluid mt-4 d-flex flex-column" style="height: calc(100vh - 100px);">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mb-4">
+                <span class="bi bi-chat-dots" aria-hidden="true"></span> Chat
+            </h1>
+        </div>
+    </div>
+
+    <!-- Index Selection -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="indexSelect" class="form-label">Select Search Index</label>
+            <select id="indexSelect" class="form-select" @bind="_selectedIndex">
+                <option value="">-- Select Index --</option>
+                @foreach (var index in _indexes)
+                {
+                    <option value="@index">@index</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <!-- Results Area -->
+    <div class="row flex-grow-1 mb-3">
+        <div class="col-12 h-100">
+            <label for="resultsArea" class="form-label">AI Response</label>
+            <textarea id="resultsArea" 
+                      class="form-control h-100" 
+                      readonly 
+                      style="resize: none; background-color: #f8f9fa;"
+                      placeholder="Results from the AI model will appear here..."
+                      @bind="_results"></textarea>
+        </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="row pb-4">
+        <div class="col-12">
+            <label for="userPrompt" class="form-label">Your Prompt</label>
+            <div class="input-group">
+                <input id="userPrompt" 
+                       type="text" 
+                       class="form-control" 
+                       placeholder="Enter your prompt here..." 
+                       @bind="_userPrompt"
+                       @bind:event="oninput" 
+                       @onkeyup="@(e => e.Key == "Enter" ? OnSendClicked() : Task.CompletedTask)" />
+                <button class="btn btn-primary" type="button" @onclick="OnSendClicked" disabled="@IsSendDisabled">
+                    @if (_isProcessing)
+                    {
+                        <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                        <span>Thinking...</span>
+                    }
+                    else
+                    {
+                        <span class="bi bi-send-fill me-2"></span>
+                        <span>Send</span>
+                    }
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<string> _indexes = new();
+    private string _selectedIndex = string.Empty;
+    private string _results = string.Empty;
+    private string _userPrompt = string.Empty;
+    private bool _isProcessing = false;
+
+    private bool IsSendDisabled => 
+        string.IsNullOrWhiteSpace(_selectedIndex) || 
+        string.IsNullOrWhiteSpace(_userPrompt) || 
+        _isProcessing;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _indexes = await IndexService.ListIndexesAsync();
+        }
+        catch (Exception ex)
+        {
+            _results = $"Error loading indexes: {ex.Message}";
+        }
+    }
+
+    private async Task OnSendClicked()
+    {
+        if (IsSendDisabled) return;
+
+        _isProcessing = true;
+        _results = "Thinking...";
+
+        try
+        {
+            var strategy = StrategyFactory.GetStrategy(_selectedIndex);
+            _results = await strategy.ExecuteSearchAndChatAsync(_selectedIndex, _userPrompt);
+        }
+        catch (Exception ex)
+        {
+            _results = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            _isProcessing = false;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "doc-069",
+  "name": "Turbine C069",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Mitsubishi Turbine unit operating in Region15. Critical for process flow.",
+  "region": "Region15",
+  "tags": [
+    {
+      "name": "TAG-1950",
+      "alias": "Alias_TAG-1950",
+      "description": "Measurement tag for TAG-1950",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1883",
+      "alias": "Alias_TAG-1883",
+      "description": "Measurement tag for TAG-1883",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1297",
+      "alias": "Alias_TAG-1297",
+      "description": "Measurement tag for TAG-1297",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5768",
+      "alias": "Alias_TAG-5768",
+      "description": "Measurement tag for TAG-5768",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2791",
+      "alias": "Alias_TAG-2791",
+      "description": "Measurement tag for TAG-2791",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2022-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

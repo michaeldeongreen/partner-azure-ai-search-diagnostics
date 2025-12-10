@@ -1,0 +1,89 @@
+{
+  "id": "doc-028",
+  "name": "Valve O028",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Valve designed for extreme conditions in Region15.",
+  "region": "Region15",
+  "tags": [
+    {
+      "name": "TAG-6421",
+      "alias": "Alias_TAG-6421",
+      "description": "Measurement tag for TAG-6421",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7423",
+      "alias": "Alias_TAG-7423",
+      "description": "Measurement tag for TAG-7423",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8124",
+      "alias": "Alias_TAG-8124",
+      "description": "Measurement tag for TAG-8124",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-853",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-853",
+      "alias": "S_Stream-853",
+      "datahubstreamid": "dh-71754",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-103",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-103",
+      "alias": "S_Stream-103",
+      "datahubstreamid": "dh-69069",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-949",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-949",
+      "alias": "S_Stream-949",
+      "datahubstreamid": "dh-81979",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

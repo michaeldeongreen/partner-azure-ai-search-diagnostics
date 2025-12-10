@@ -1,0 +1,76 @@
+{
+  "id": "doc-055",
+  "name": "Separator H055",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Backup separator unit, model X-2000, located in Region15 sector.",
+  "region": "Region15",
+  "tags": [
+    {
+      "name": "TAG-4662",
+      "alias": "Alias_TAG-4662",
+      "description": "Measurement tag for TAG-4662",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6996",
+      "alias": "Alias_TAG-6996",
+      "description": "Measurement tag for TAG-6996",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6161",
+      "alias": "Alias_TAG-6161",
+      "description": "Measurement tag for TAG-6161",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4065",
+      "alias": "Alias_TAG-4065",
+      "description": "Measurement tag for TAG-4065",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-437",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-437",
+      "alias": "S_Stream-437",
+      "datahubstreamid": "dh-95914",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2013-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

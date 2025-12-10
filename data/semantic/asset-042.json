@@ -1,0 +1,76 @@
+{
+  "id": "doc-042",
+  "name": "Pump F042",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Backup pump unit, model X-2000, located in Region06 sector.",
+  "region": "Region06",
+  "tags": [
+    {
+      "name": "TAG-7383",
+      "alias": "Alias_TAG-7383",
+      "description": "Measurement tag for TAG-7383",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4473",
+      "alias": "Alias_TAG-4473",
+      "description": "Measurement tag for TAG-4473",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6160",
+      "alias": "Alias_TAG-6160",
+      "description": "Measurement tag for TAG-6160",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9042",
+      "alias": "Alias_TAG-9042",
+      "description": "Measurement tag for TAG-9042",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-600",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-600",
+      "alias": "S_Stream-600",
+      "datahubstreamid": "dh-27690",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2013-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

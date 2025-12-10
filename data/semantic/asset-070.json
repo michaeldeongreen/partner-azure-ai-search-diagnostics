@@ -1,0 +1,89 @@
+{
+  "id": "doc-070",
+  "name": "Turbine L070",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Ingersoll Rand Turbine unit operating in Region18. Critical for process flow.",
+  "region": "Region18",
+  "tags": [
+    {
+      "name": "TAG-7743",
+      "alias": "Alias_TAG-7743",
+      "description": "Measurement tag for TAG-7743",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9805",
+      "alias": "Alias_TAG-9805",
+      "description": "Measurement tag for TAG-9805",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4833",
+      "alias": "Alias_TAG-4833",
+      "description": "Measurement tag for TAG-4833",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-572",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-572",
+      "alias": "S_Stream-572",
+      "datahubstreamid": "dh-14636",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-394",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-394",
+      "alias": "S_Stream-394",
+      "datahubstreamid": "dh-75072",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-905",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-905",
+      "alias": "S_Stream-905",
+      "datahubstreamid": "dh-73411",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2012-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "doc-018",
+  "name": "Heat Exchanger W018",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "GE Heat Exchanger unit operating in Region09. Critical for process flow.",
+  "region": "Region09",
+  "tags": [
+    {
+      "name": "TAG-6818",
+      "alias": "Alias_TAG-6818",
+      "description": "Measurement tag for TAG-6818",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8789",
+      "alias": "Alias_TAG-8789",
+      "description": "Measurement tag for TAG-8789",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6465",
+      "alias": "Alias_TAG-6465",
+      "description": "Measurement tag for TAG-6465",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4828",
+      "alias": "Alias_TAG-4828",
+      "description": "Measurement tag for TAG-4828",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-815",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-815",
+      "alias": "S_Stream-815",
+      "datahubstreamid": "dh-51404",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2023-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

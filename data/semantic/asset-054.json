@@ -1,0 +1,69 @@
+{
+  "id": "doc-054",
+  "name": "Compressor H054",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Standard compressor for auxiliary support in Region13. Maintained by Ingersoll Rand.",
+  "region": "Region13",
+  "tags": [
+    {
+      "name": "TAG-3013",
+      "alias": "Alias_TAG-3013",
+      "description": "Measurement tag for TAG-3013",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3442",
+      "alias": "Alias_TAG-3442",
+      "description": "Measurement tag for TAG-3442",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-610",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-610",
+      "alias": "S_Stream-610",
+      "datahubstreamid": "dh-59948",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-676",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-676",
+      "alias": "S_Stream-676",
+      "datahubstreamid": "dh-42652",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2017-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

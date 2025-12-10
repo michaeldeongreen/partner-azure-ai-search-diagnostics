@@ -1,0 +1,85 @@
+{
+  "id": "doc-071",
+  "name": "Turbine G071",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Backup turbine unit, model X-2000, located in Region12 sector.",
+  "region": "Region12",
+  "tags": [
+    {
+      "name": "TAG-1049",
+      "alias": "Alias_TAG-1049",
+      "description": "Measurement tag for TAG-1049",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1521",
+      "alias": "Alias_TAG-1521",
+      "description": "Measurement tag for TAG-1521",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2136",
+      "alias": "Alias_TAG-2136",
+      "description": "Measurement tag for TAG-2136",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5209",
+      "alias": "Alias_TAG-5209",
+      "description": "Measurement tag for TAG-5209",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7003",
+      "alias": "Alias_TAG-7003",
+      "description": "Measurement tag for TAG-7003",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-443",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-443",
+      "alias": "S_Stream-443",
+      "datahubstreamid": "dh-41563",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2019-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

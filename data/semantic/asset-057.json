@@ -1,0 +1,67 @@
+{
+  "id": "doc-057",
+  "name": "Pump L057",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Backup pump unit, model X-2000, located in Region01 sector.",
+  "region": "Region01",
+  "tags": [
+    {
+      "name": "TAG-1688",
+      "alias": "Alias_TAG-1688",
+      "description": "Measurement tag for TAG-1688",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7290",
+      "alias": "Alias_TAG-7290",
+      "description": "Measurement tag for TAG-7290",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8076",
+      "alias": "Alias_TAG-8076",
+      "description": "Measurement tag for TAG-8076",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-904",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-904",
+      "alias": "S_Stream-904",
+      "datahubstreamid": "dh-54927",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

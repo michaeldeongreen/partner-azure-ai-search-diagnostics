@@ -1,0 +1,49 @@
+{
+  "id": "doc-022",
+  "name": "Heat Exchanger E022",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Heat Exchanger designed for extreme conditions in Region04.",
+  "region": "Region04",
+  "tags": [
+    {
+      "name": "TAG-6713",
+      "alias": "Alias_TAG-6713",
+      "description": "Measurement tag for TAG-6713",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-145",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-145",
+      "alias": "S_Stream-145",
+      "datahubstreamid": "dh-51329",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2011-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

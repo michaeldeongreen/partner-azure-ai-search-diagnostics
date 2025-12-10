@@ -1,0 +1,67 @@
+{
+  "id": "doc-034",
+  "name": "Compressor T034",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Standard compressor for auxiliary support in Region12. Maintained by Atlas Copco.",
+  "region": "Region12",
+  "tags": [
+    {
+      "name": "TAG-6311",
+      "alias": "Alias_TAG-6311",
+      "description": "Measurement tag for TAG-6311",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4289",
+      "alias": "Alias_TAG-4289",
+      "description": "Measurement tag for TAG-4289",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5760",
+      "alias": "Alias_TAG-5760",
+      "description": "Measurement tag for TAG-5760",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-710",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-710",
+      "alias": "S_Stream-710",
+      "datahubstreamid": "dh-52519",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2010-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,96 @@
+{
+  "id": "doc-044",
+  "name": "Turbine K044",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "GE Turbine unit operating in Region10. Critical for process flow.",
+  "region": "Region10",
+  "tags": [
+    {
+      "name": "TAG-1508",
+      "alias": "Alias_TAG-1508",
+      "description": "Measurement tag for TAG-1508",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9193",
+      "alias": "Alias_TAG-9193",
+      "description": "Measurement tag for TAG-9193",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8524",
+      "alias": "Alias_TAG-8524",
+      "description": "Measurement tag for TAG-8524",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7052",
+      "alias": "Alias_TAG-7052",
+      "description": "Measurement tag for TAG-7052",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6010",
+      "alias": "Alias_TAG-6010",
+      "description": "Measurement tag for TAG-6010",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-559",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-559",
+      "alias": "S_Stream-559",
+      "datahubstreamid": "dh-78518",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-916",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-916",
+      "alias": "S_Stream-916",
+      "datahubstreamid": "dh-11949",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2013-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

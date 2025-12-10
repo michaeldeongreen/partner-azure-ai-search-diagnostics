@@ -1,0 +1,85 @@
+{
+  "id": "doc-052",
+  "name": "Pump U052",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Pump designed for extreme conditions in Region04.",
+  "region": "Region04",
+  "tags": [
+    {
+      "name": "TAG-3134",
+      "alias": "Alias_TAG-3134",
+      "description": "Measurement tag for TAG-3134",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1440",
+      "alias": "Alias_TAG-1440",
+      "description": "Measurement tag for TAG-1440",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2313",
+      "alias": "Alias_TAG-2313",
+      "description": "Measurement tag for TAG-2313",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4564",
+      "alias": "Alias_TAG-4564",
+      "description": "Measurement tag for TAG-4564",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7635",
+      "alias": "Alias_TAG-7635",
+      "description": "Measurement tag for TAG-7635",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-185",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-185",
+      "alias": "S_Stream-185",
+      "datahubstreamid": "dh-19299",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

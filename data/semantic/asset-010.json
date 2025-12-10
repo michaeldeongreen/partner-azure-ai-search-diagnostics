@@ -1,0 +1,76 @@
+{
+  "id": "doc-010",
+  "name": "Pump B010",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Pump designed for extreme conditions in Region05.",
+  "region": "Region05",
+  "tags": [
+    {
+      "name": "TAG-3334",
+      "alias": "Alias_TAG-3334",
+      "description": "Measurement tag for TAG-3334",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9871",
+      "alias": "Alias_TAG-9871",
+      "description": "Measurement tag for TAG-9871",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9687",
+      "alias": "Alias_TAG-9687",
+      "description": "Measurement tag for TAG-9687",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8198",
+      "alias": "Alias_TAG-8198",
+      "description": "Measurement tag for TAG-8198",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-376",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-376",
+      "alias": "S_Stream-376",
+      "datahubstreamid": "dh-34758",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2020-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

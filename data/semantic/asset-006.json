@@ -1,0 +1,67 @@
+{
+  "id": "doc-006",
+  "name": "Valve J006",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "A high-efficiency valve manufactured by Ingersoll Rand. Located in Region12.",
+  "region": "Region12",
+  "tags": [
+    {
+      "name": "TAG-2667",
+      "alias": "Alias_TAG-2667",
+      "description": "Measurement tag for TAG-2667",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9848",
+      "alias": "Alias_TAG-9848",
+      "description": "Measurement tag for TAG-9848",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5891",
+      "alias": "Alias_TAG-5891",
+      "description": "Measurement tag for TAG-5891",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-474",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-474",
+      "alias": "S_Stream-474",
+      "datahubstreamid": "dh-87579",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2014-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

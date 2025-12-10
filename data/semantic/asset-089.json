@@ -1,0 +1,69 @@
+{
+  "id": "doc-089",
+  "name": "Compressor Z089",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Siemens Compressor unit operating in Region07. Critical for process flow.",
+  "region": "Region07",
+  "tags": [
+    {
+      "name": "TAG-4937",
+      "alias": "Alias_TAG-4937",
+      "description": "Measurement tag for TAG-4937",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4738",
+      "alias": "Alias_TAG-4738",
+      "description": "Measurement tag for TAG-4738",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-949",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-949",
+      "alias": "S_Stream-949",
+      "datahubstreamid": "dh-40799",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-781",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-781",
+      "alias": "S_Stream-781",
+      "datahubstreamid": "dh-78856",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2019-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

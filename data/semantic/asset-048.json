@@ -1,0 +1,69 @@
+{
+  "id": "doc-048",
+  "name": "Heat Exchanger M048",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "A high-efficiency heat exchanger manufactured by Mitsubishi. Located in Region08.",
+  "region": "Region08",
+  "tags": [
+    {
+      "name": "TAG-9403",
+      "alias": "Alias_TAG-9403",
+      "description": "Measurement tag for TAG-9403",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5525",
+      "alias": "Alias_TAG-5525",
+      "description": "Measurement tag for TAG-5525",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-880",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-880",
+      "alias": "S_Stream-880",
+      "datahubstreamid": "dh-34078",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-344",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-344",
+      "alias": "S_Stream-344",
+      "datahubstreamid": "dh-78905",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2010-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "doc-091",
+  "name": "Separator V091",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Separator designed for extreme conditions in Region17.",
+  "region": "Region17",
+  "tags": [
+    {
+      "name": "TAG-7530",
+      "alias": "Alias_TAG-7530",
+      "description": "Measurement tag for TAG-7530",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7280",
+      "alias": "Alias_TAG-7280",
+      "description": "Measurement tag for TAG-7280",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-979",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-979",
+      "alias": "S_Stream-979",
+      "datahubstreamid": "dh-86291",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2022-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

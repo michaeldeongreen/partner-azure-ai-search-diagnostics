@@ -1,0 +1,89 @@
+{
+  "name": "semantic-search-compressor-index",
+  "fields": [
+    {
+      "name": "id",
+      "type": "Edm.String",
+      "key": true,
+      "filterable": true,
+      "sortable": true
+    },
+    {
+      "name": "name",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "sortable": true
+    },
+    {
+      "name": "assettypes",
+      "type": "Collection(Edm.String)",
+      "searchable": true,
+      "filterable": true
+    },
+    {
+      "name": "description",
+      "type": "Edm.String",
+      "searchable": true
+    },
+    {
+      "name": "region",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "sortable": true,
+      "facetable": true
+    },
+    {
+      "name": "tags",
+      "type": "Collection(Edm.ComplexType)",
+      "fields": [
+        { "name": "name", "type": "Edm.String", "searchable": true },
+        { "name": "alias", "type": "Edm.String", "searchable": true },
+        { "name": "description", "type": "Edm.String", "searchable": true },
+        { "name": "source", "type": "Edm.String", "filterable": true },
+        { "name": "tagtype", "type": "Edm.String", "filterable": true },
+        { "name": "engunit", "type": "Edm.String", "filterable": true },
+        { "name": "dimension", "type": "Edm.String", "filterable": true }
+      ]
+    },
+    {
+      "name": "streams",
+      "type": "Collection(Edm.ComplexType)",
+      "fields": [
+        { "name": "name", "type": "Edm.String", "searchable": true },
+        { "name": "propertyname", "type": "Edm.String", "searchable": true },
+        { "name": "description", "type": "Edm.String", "searchable": true },
+        { "name": "alias", "type": "Edm.String", "searchable": true },
+        { "name": "datahubstreamid", "type": "Edm.String", "filterable": true },
+        { "name": "source", "type": "Edm.String", "filterable": true },
+        { "name": "tagtype", "type": "Edm.String", "filterable": true },
+        { "name": "engunit", "type": "Edm.String", "filterable": true },
+        { "name": "dimension", "type": "Edm.String", "filterable": true }
+      ]
+    },
+    {
+      "name": "metadata",
+      "type": "Collection(Edm.ComplexType)",
+      "fields": [
+        { "name": "propertyname", "type": "Edm.String", "searchable": true },
+        { "name": "propertyvalue", "type": "Edm.String", "searchable": true }
+      ]
+    }
+  ],
+  "semantic": {
+    "configurations": [
+      {
+        "name": "default",
+        "prioritizedFields": {
+          "titleField": { "fieldName": "name" },
+          "prioritizedContentFields": [
+            { "fieldName": "description" },
+            { "fieldName": "assettypes" },
+            { "fieldName": "region" }
+          ]
+        }
+      }
+    ]
+  }
+}

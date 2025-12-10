@@ -1,0 +1,71 @@
+{
+  "id": "doc-017",
+  "name": "Pump P017",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Pump designed for extreme conditions in Region01.",
+  "region": "Region01",
+  "tags": [
+    {
+      "name": "TAG-3888",
+      "alias": "Alias_TAG-3888",
+      "description": "Measurement tag for TAG-3888",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-762",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-762",
+      "alias": "S_Stream-762",
+      "datahubstreamid": "dh-73625",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-531",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-531",
+      "alias": "S_Stream-531",
+      "datahubstreamid": "dh-76298",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-796",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-796",
+      "alias": "S_Stream-796",
+      "datahubstreamid": "dh-49857",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2022-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

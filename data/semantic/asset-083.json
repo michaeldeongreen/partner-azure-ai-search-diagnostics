@@ -1,0 +1,89 @@
+{
+  "id": "doc-083",
+  "name": "Valve C083",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "Backup valve unit, model X-2000, located in Region18 sector.",
+  "region": "Region18",
+  "tags": [
+    {
+      "name": "TAG-4035",
+      "alias": "Alias_TAG-4035",
+      "description": "Measurement tag for TAG-4035",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9979",
+      "alias": "Alias_TAG-9979",
+      "description": "Measurement tag for TAG-9979",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9426",
+      "alias": "Alias_TAG-9426",
+      "description": "Measurement tag for TAG-9426",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-943",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-943",
+      "alias": "S_Stream-943",
+      "datahubstreamid": "dh-56262",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-510",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-510",
+      "alias": "S_Stream-510",
+      "datahubstreamid": "dh-55405",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-429",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-429",
+      "alias": "S_Stream-429",
+      "datahubstreamid": "dh-59696",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2011-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

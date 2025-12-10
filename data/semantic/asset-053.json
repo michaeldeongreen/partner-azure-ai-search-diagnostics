@@ -1,0 +1,60 @@
+{
+  "id": "doc-053",
+  "name": "Compressor C053",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Standard compressor for auxiliary support in Region06. Maintained by Siemens.",
+  "region": "Region06",
+  "tags": [
+    {
+      "name": "TAG-9368",
+      "alias": "Alias_TAG-9368",
+      "description": "Measurement tag for TAG-9368",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-966",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-966",
+      "alias": "S_Stream-966",
+      "datahubstreamid": "dh-19591",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-638",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-638",
+      "alias": "S_Stream-638",
+      "datahubstreamid": "dh-81889",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2012-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

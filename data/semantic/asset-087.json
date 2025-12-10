@@ -1,0 +1,60 @@
+{
+  "id": "doc-087",
+  "name": "Valve X087",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "A high-efficiency valve manufactured by GE. Located in Region08.",
+  "region": "Region08",
+  "tags": [
+    {
+      "name": "TAG-6105",
+      "alias": "Alias_TAG-6105",
+      "description": "Measurement tag for TAG-6105",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-975",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-975",
+      "alias": "S_Stream-975",
+      "datahubstreamid": "dh-60094",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-443",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-443",
+      "alias": "S_Stream-443",
+      "datahubstreamid": "dh-54687",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2013-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

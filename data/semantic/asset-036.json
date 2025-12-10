@@ -1,0 +1,85 @@
+{
+  "id": "doc-036",
+  "name": "Pump D036",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Pump designed for extreme conditions in Region14.",
+  "region": "Region14",
+  "tags": [
+    {
+      "name": "TAG-6736",
+      "alias": "Alias_TAG-6736",
+      "description": "Measurement tag for TAG-6736",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9750",
+      "alias": "Alias_TAG-9750",
+      "description": "Measurement tag for TAG-9750",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5359",
+      "alias": "Alias_TAG-5359",
+      "description": "Measurement tag for TAG-5359",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6369",
+      "alias": "Alias_TAG-6369",
+      "description": "Measurement tag for TAG-6369",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3355",
+      "alias": "Alias_TAG-3355",
+      "description": "Measurement tag for TAG-3355",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-517",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-517",
+      "alias": "S_Stream-517",
+      "datahubstreamid": "dh-36076",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2012-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

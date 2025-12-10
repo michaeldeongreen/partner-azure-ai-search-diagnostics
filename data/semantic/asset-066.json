@@ -1,0 +1,107 @@
+{
+  "id": "doc-066",
+  "name": "Separator M066",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Separator designed for extreme conditions in Region17.",
+  "region": "Region17",
+  "tags": [
+    {
+      "name": "TAG-8014",
+      "alias": "Alias_TAG-8014",
+      "description": "Measurement tag for TAG-8014",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3075",
+      "alias": "Alias_TAG-3075",
+      "description": "Measurement tag for TAG-3075",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5875",
+      "alias": "Alias_TAG-5875",
+      "description": "Measurement tag for TAG-5875",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4111",
+      "alias": "Alias_TAG-4111",
+      "description": "Measurement tag for TAG-4111",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4949",
+      "alias": "Alias_TAG-4949",
+      "description": "Measurement tag for TAG-4949",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-185",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-185",
+      "alias": "S_Stream-185",
+      "datahubstreamid": "dh-39417",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-477",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-477",
+      "alias": "S_Stream-477",
+      "datahubstreamid": "dh-75012",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-834",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-834",
+      "alias": "S_Stream-834",
+      "datahubstreamid": "dh-11298",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2023-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

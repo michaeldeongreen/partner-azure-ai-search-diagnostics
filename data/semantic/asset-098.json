@@ -1,0 +1,87 @@
+{
+  "id": "doc-098",
+  "name": "Pump T098",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "A high-efficiency pump manufactured by Mitsubishi. Located in Region06.",
+  "region": "Region06",
+  "tags": [
+    {
+      "name": "TAG-8505",
+      "alias": "Alias_TAG-8505",
+      "description": "Measurement tag for TAG-8505",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9494",
+      "alias": "Alias_TAG-9494",
+      "description": "Measurement tag for TAG-9494",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9093",
+      "alias": "Alias_TAG-9093",
+      "description": "Measurement tag for TAG-9093",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6703",
+      "alias": "Alias_TAG-6703",
+      "description": "Measurement tag for TAG-6703",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-610",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-610",
+      "alias": "S_Stream-610",
+      "datahubstreamid": "dh-96558",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-853",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-853",
+      "alias": "S_Stream-853",
+      "datahubstreamid": "dh-78057",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2019-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

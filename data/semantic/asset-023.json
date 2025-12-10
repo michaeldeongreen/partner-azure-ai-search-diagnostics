@@ -1,0 +1,87 @@
+{
+  "id": "doc-023",
+  "name": "Heat Exchanger B023",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "Backup heat exchanger unit, model X-2000, located in Region07 sector.",
+  "region": "Region07",
+  "tags": [
+    {
+      "name": "TAG-8919",
+      "alias": "Alias_TAG-8919",
+      "description": "Measurement tag for TAG-8919",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8066",
+      "alias": "Alias_TAG-8066",
+      "description": "Measurement tag for TAG-8066",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1501",
+      "alias": "Alias_TAG-1501",
+      "description": "Measurement tag for TAG-1501",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1312",
+      "alias": "Alias_TAG-1312",
+      "description": "Measurement tag for TAG-1312",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-417",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-417",
+      "alias": "S_Stream-417",
+      "datahubstreamid": "dh-47718",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-858",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-858",
+      "alias": "S_Stream-858",
+      "datahubstreamid": "dh-78650",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

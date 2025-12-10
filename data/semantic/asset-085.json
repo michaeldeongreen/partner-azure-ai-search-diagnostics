@@ -1,0 +1,37 @@
+{
+  "id": "doc-085",
+  "name": "Heat Exchanger T085",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "A high-efficiency heat exchanger manufactured by Ingersoll Rand. Located in Region04.",
+  "region": "Region04",
+  "tags": [
+    {
+      "name": "TAG-7591",
+      "alias": "Alias_TAG-7591",
+      "description": "Measurement tag for TAG-7591",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2018-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

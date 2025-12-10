@@ -1,0 +1,60 @@
+{
+  "id": "doc-031",
+  "name": "Compressor B031",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Compressor designed for extreme conditions in Region14.",
+  "region": "Region14",
+  "tags": [
+    {
+      "name": "TAG-9635",
+      "alias": "Alias_TAG-9635",
+      "description": "Measurement tag for TAG-9635",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-373",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-373",
+      "alias": "S_Stream-373",
+      "datahubstreamid": "dh-92773",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-528",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-528",
+      "alias": "S_Stream-528",
+      "datahubstreamid": "dh-93753",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

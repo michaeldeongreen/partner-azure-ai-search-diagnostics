@@ -1,0 +1,73 @@
+{
+  "id": "doc-099",
+  "name": "Pump F099",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Backup pump unit, model X-2000, located in Region16 sector.",
+  "region": "Region16",
+  "tags": [
+    {
+      "name": "TAG-1137",
+      "alias": "Alias_TAG-1137",
+      "description": "Measurement tag for TAG-1137",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9952",
+      "alias": "Alias_TAG-9952",
+      "description": "Measurement tag for TAG-9952",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3512",
+      "alias": "Alias_TAG-3512",
+      "description": "Measurement tag for TAG-3512",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7339",
+      "alias": "Alias_TAG-7339",
+      "description": "Measurement tag for TAG-7339",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7655",
+      "alias": "Alias_TAG-7655",
+      "description": "Measurement tag for TAG-7655",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2023-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

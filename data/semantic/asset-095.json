@@ -1,0 +1,71 @@
+{
+  "id": "doc-095",
+  "name": "Separator P095",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Standard separator for auxiliary support in Region01. Maintained by Mitsubishi.",
+  "region": "Region01",
+  "tags": [
+    {
+      "name": "TAG-2695",
+      "alias": "Alias_TAG-2695",
+      "description": "Measurement tag for TAG-2695",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-695",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-695",
+      "alias": "S_Stream-695",
+      "datahubstreamid": "dh-87360",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-823",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-823",
+      "alias": "S_Stream-823",
+      "datahubstreamid": "dh-90977",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-634",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-634",
+      "alias": "S_Stream-634",
+      "datahubstreamid": "dh-13956",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2014-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

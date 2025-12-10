@@ -1,0 +1,69 @@
+{
+  "id": "doc-072",
+  "name": "Separator D072",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Ingersoll Rand Separator unit operating in Region03. Critical for process flow.",
+  "region": "Region03",
+  "tags": [
+    {
+      "name": "TAG-3065",
+      "alias": "Alias_TAG-3065",
+      "description": "Measurement tag for TAG-3065",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3365",
+      "alias": "Alias_TAG-3365",
+      "description": "Measurement tag for TAG-3365",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-966",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-966",
+      "alias": "S_Stream-966",
+      "datahubstreamid": "dh-82564",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-817",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-817",
+      "alias": "S_Stream-817",
+      "datahubstreamid": "dh-62260",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2014-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

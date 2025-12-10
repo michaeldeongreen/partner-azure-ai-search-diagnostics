@@ -1,0 +1,35 @@
+# Azure Developer CLI
+.azure/
+
+# Environment files
+.env
+*.env
+**/.env
+
+# Bicep build artifacts
+*.bicep.json
+
+# Azure
+*.log
+
+# Credentials and secrets
+appsettings.Development.json
+secrets.json
+*.key
+*.pem
+*.pfx
+*.p12
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+.vs/
+.vscode/
+*.dll
+*.exe
+*.pdb
+
+.fake

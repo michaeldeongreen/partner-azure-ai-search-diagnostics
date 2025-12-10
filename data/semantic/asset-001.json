@@ -1,0 +1,69 @@
+{
+  "id": "doc-001",
+  "name": "Separator A001",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Separator designed for extreme conditions in Region05.",
+  "region": "Region05",
+  "tags": [
+    {
+      "name": "TAG-6855",
+      "alias": "Alias_TAG-6855",
+      "description": "Measurement tag for TAG-6855",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8903",
+      "alias": "Alias_TAG-8903",
+      "description": "Measurement tag for TAG-8903",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-697",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-697",
+      "alias": "S_Stream-697",
+      "datahubstreamid": "dh-37689",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-837",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-837",
+      "alias": "S_Stream-837",
+      "datahubstreamid": "dh-78125",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2020-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

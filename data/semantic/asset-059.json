@@ -1,0 +1,49 @@
+{
+  "id": "doc-059",
+  "name": "Heat Exchanger X059",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "A high-efficiency heat exchanger manufactured by GE. Located in Region03.",
+  "region": "Region03",
+  "tags": [
+    {
+      "name": "TAG-3012",
+      "alias": "Alias_TAG-3012",
+      "description": "Measurement tag for TAG-3012",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-458",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-458",
+      "alias": "S_Stream-458",
+      "datahubstreamid": "dh-64652",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2012-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

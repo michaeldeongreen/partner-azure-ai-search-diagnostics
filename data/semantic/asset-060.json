@@ -1,0 +1,55 @@
+{
+  "id": "doc-060",
+  "name": "Compressor S060",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Backup compressor unit, model X-2000, located in Region03 sector.",
+  "region": "Region03",
+  "tags": [
+    {
+      "name": "TAG-6525",
+      "alias": "Alias_TAG-6525",
+      "description": "Measurement tag for TAG-6525",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2796",
+      "alias": "Alias_TAG-2796",
+      "description": "Measurement tag for TAG-2796",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1006",
+      "alias": "Alias_TAG-1006",
+      "description": "Measurement tag for TAG-1006",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2015-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

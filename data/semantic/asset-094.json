@@ -1,0 +1,37 @@
+{
+  "id": "doc-094",
+  "name": "Valve M094",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "A high-efficiency valve manufactured by Siemens. Located in Region10.",
+  "region": "Region10",
+  "tags": [
+    {
+      "name": "TAG-6501",
+      "alias": "Alias_TAG-6501",
+      "description": "Measurement tag for TAG-6501",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "doc-065",
+  "name": "Heat Exchanger C065",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "GE Heat Exchanger unit operating in Region10. Critical for process flow.",
+  "region": "Region10",
+  "tags": [
+    {
+      "name": "TAG-2716",
+      "alias": "Alias_TAG-2716",
+      "description": "Measurement tag for TAG-2716",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2019-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "doc-088",
+  "name": "Pump M088",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Standard pump for auxiliary support in Region13. Maintained by GE.",
+  "region": "Region13",
+  "tags": [
+    {
+      "name": "TAG-8552",
+      "alias": "Alias_TAG-8552",
+      "description": "Measurement tag for TAG-8552",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5730",
+      "alias": "Alias_TAG-5730",
+      "description": "Measurement tag for TAG-5730",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7957",
+      "alias": "Alias_TAG-7957",
+      "description": "Measurement tag for TAG-7957",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2023-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

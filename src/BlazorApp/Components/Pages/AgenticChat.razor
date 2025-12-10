@@ -1,0 +1,179 @@
+@page "/agentic-chat"
+@using BlazorApp.Services
+@using BlazorApp.Services.Agentic
+@using OpenAI.Chat
+@inject IAzureSearchIndexService IndexService
+@inject AgenticSearchService AgenticService
+@rendermode InteractiveServer
+
+<PageTitle>Chat (Agentic)</PageTitle>
+
+<div class="container-fluid mt-4 d-flex flex-column" style="height: calc(100vh - 100px);">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mb-4">
+                <span class="bi bi-robot" aria-hidden="true"></span> Chat (Agentic Tools)
+            </h1>
+        </div>
+    </div>
+
+    <!-- Index Selection -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label for="indexSelect" class="form-label">Select Search Index</label>
+            <select id="indexSelect" class="form-select" @bind="_selectedIndex">
+                <option value="">-- Select Index --</option>
+                @foreach (var index in _indexes)
+                {
+                    <option value="@index">@index</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <!-- Results Area -->
+    <div class="row flex-grow-1 mb-3">
+        <div class="col-12 h-100">
+            <label for="resultsArea" class="form-label">Conversation</label>
+            <div id="resultsArea" class="form-control h-100 overflow-auto" style="background-color: #f8f9fa;">
+                @foreach (var msg in _displayHistory)
+                {
+                    <div class="mb-2">
+                        <strong>@msg.Role:</strong>
+                        <pre style="white-space: pre-wrap;">@msg.Content</pre>
+                        @if (msg.ToolsUsed.Any())
+                        {
+                            <div class="text-muted small mt-2">
+                                <i class="bi bi-tools"></i> Tools used: 
+                                @foreach(var tool in msg.ToolsUsed)
+                                {
+                                    <span class="badge bg-secondary me-1">@tool</span>
+                                }
+                            </div>
+                        }
+                        @if (msg.ToolQueries.Any())
+                        {
+                            <div class="mt-2 p-2 bg-light border rounded small">
+                                <strong><i class="bi bi-code-slash"></i> Executed Queries:</strong>
+                                <ul class="list-unstyled mb-0 ps-2">
+                                    @foreach(var query in msg.ToolQueries)
+                                    {
+                                        <li class="text-monospace text-primary" style="white-space: pre-wrap;">@query</li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+                    </div>
+                }
+                @if (_isProcessing)
+                {
+                    <div class="text-muted">
+                        <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                        <em>Agent is thinking and using tools...</em>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="row pb-4">
+        <div class="col-12">
+            <label for="userPrompt" class="form-label">Your Prompt</label>
+            <div class="input-group">
+                <input id="userPrompt" 
+                       type="text" 
+                       class="form-control" 
+                       placeholder="Enter your prompt here..." 
+                       @bind="_userPrompt"
+                       @bind:event="oninput" 
+                       @onkeyup="@(e => e.Key == "Enter" ? OnSendClicked() : Task.CompletedTask)" />
+                <button class="btn btn-primary" type="button" @onclick="OnSendClicked" disabled="@IsSendDisabled">
+                    @if (_isProcessing)
+                    {
+                        <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                        <span>Thinking...</span>
+                    }
+                    else
+                    {
+                        <span class="bi bi-send-fill me-2"></span>
+                        <span>Send</span>
+                    }
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<string> _indexes = new();
+    private string _selectedIndex = string.Empty;
+    private string _userPrompt = string.Empty;
+    private bool _isProcessing = false;
+    
+    // We keep the full chat history for the LLM
+    private List<ChatMessage> _history = new();
+    
+    // We keep a simplified display history for the UI
+    private List<DisplayMessage> _displayHistory = new();
+
+    private class DisplayMessage
+    {
+        public string Role { get; set; } = "";
+        public string Content { get; set; } = "";
+        public List<string> ToolsUsed { get; set; } = new();
+        public List<string> ToolQueries { get; set; } = new();
+    }
+
+    private bool IsSendDisabled => 
+        string.IsNullOrWhiteSpace(_selectedIndex) || 
+        string.IsNullOrWhiteSpace(_userPrompt) || 
+        _isProcessing;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _indexes = await IndexService.ListIndexesAsync();
+        }
+        catch (Exception ex)
+        {
+            _displayHistory.Add(new DisplayMessage { Role = "System", Content = $"Error loading indexes: {ex.Message}" });
+        }
+    }
+
+    private async Task OnSendClicked()
+    {
+        if (IsSendDisabled) return;
+
+        var prompt = _userPrompt;
+        _userPrompt = string.Empty; // Clear input
+        _isProcessing = true;
+
+        // Add user message to history
+        _history.Add(new UserChatMessage(prompt));
+        _displayHistory.Add(new DisplayMessage { Role = "User", Content = prompt });
+
+        try
+        {
+            var result = await AgenticService.ChatAsync(_selectedIndex, _history);
+            
+            // The service adds the assistant response to _history, so we just update display
+            _displayHistory.Add(new DisplayMessage 
+            { 
+                Role = "Assistant", 
+                Content = result.Response,
+                ToolsUsed = result.ToolsUsed,
+                ToolQueries = result.ToolQueries
+            });
+        }
+        catch (Exception ex)
+        {
+            _displayHistory.Add(new DisplayMessage { Role = "Error", Content = ex.Message });
+        }
+        finally
+        {
+            _isProcessing = false;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "doc-078",
+  "name": "Turbine Z078",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Standard turbine for auxiliary support in Region08. Maintained by Siemens.",
+  "region": "Region08",
+  "tags": [
+    {
+      "name": "TAG-8437",
+      "alias": "Alias_TAG-8437",
+      "description": "Measurement tag for TAG-8437",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-558",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-558",
+      "alias": "S_Stream-558",
+      "datahubstreamid": "dh-88673",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-460",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-460",
+      "alias": "S_Stream-460",
+      "datahubstreamid": "dh-42387",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-888",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-888",
+      "alias": "S_Stream-888",
+      "datahubstreamid": "dh-82923",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2020-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

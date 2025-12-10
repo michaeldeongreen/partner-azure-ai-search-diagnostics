@@ -1,0 +1,78 @@
+{
+  "id": "doc-062",
+  "name": "Turbine F062",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Standard turbine for auxiliary support in Region08. Maintained by Siemens.",
+  "region": "Region08",
+  "tags": [
+    {
+      "name": "TAG-2388",
+      "alias": "Alias_TAG-2388",
+      "description": "Measurement tag for TAG-2388",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6324",
+      "alias": "Alias_TAG-6324",
+      "description": "Measurement tag for TAG-6324",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6023",
+      "alias": "Alias_TAG-6023",
+      "description": "Measurement tag for TAG-6023",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-859",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-859",
+      "alias": "S_Stream-859",
+      "datahubstreamid": "dh-84465",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-881",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-881",
+      "alias": "S_Stream-881",
+      "datahubstreamid": "dh-80080",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Pipeline Station 4"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2023-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "doc-043",
+  "name": "Turbine R043",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Turbine designed for extreme conditions in Region06.",
+  "region": "Region06",
+  "tags": [
+    {
+      "name": "TAG-6102",
+      "alias": "Alias_TAG-6102",
+      "description": "Measurement tag for TAG-6102",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-667",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-667",
+      "alias": "S_Stream-667",
+      "datahubstreamid": "dh-34659",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-325",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-325",
+      "alias": "S_Stream-325",
+      "datahubstreamid": "dh-30209",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2018-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

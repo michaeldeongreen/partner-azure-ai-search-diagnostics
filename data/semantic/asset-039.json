@@ -1,0 +1,71 @@
+{
+  "id": "doc-039",
+  "name": "Pump I039",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Backup pump unit, model X-2000, located in Region09 sector.",
+  "region": "Region09",
+  "tags": [
+    {
+      "name": "TAG-5054",
+      "alias": "Alias_TAG-5054",
+      "description": "Measurement tag for TAG-5054",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-897",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-897",
+      "alias": "S_Stream-897",
+      "datahubstreamid": "dh-43640",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-461",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-461",
+      "alias": "S_Stream-461",
+      "datahubstreamid": "dh-11179",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-959",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-959",
+      "alias": "S_Stream-959",
+      "datahubstreamid": "dh-11713",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2011-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

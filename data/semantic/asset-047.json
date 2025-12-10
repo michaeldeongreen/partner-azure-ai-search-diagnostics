@@ -1,0 +1,58 @@
+{
+  "id": "doc-047",
+  "name": "Valve J047",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "A high-efficiency valve manufactured by Siemens. Located in Region06.",
+  "region": "Region06",
+  "tags": [
+    {
+      "name": "TAG-7044",
+      "alias": "Alias_TAG-7044",
+      "description": "Measurement tag for TAG-7044",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2288",
+      "alias": "Alias_TAG-2288",
+      "description": "Measurement tag for TAG-2288",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-382",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-382",
+      "alias": "S_Stream-382",
+      "datahubstreamid": "dh-87054",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2022-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

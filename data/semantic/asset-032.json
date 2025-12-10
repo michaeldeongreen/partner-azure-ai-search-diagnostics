@@ -1,0 +1,98 @@
+{
+  "id": "doc-032",
+  "name": "Heat Exchanger L032",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "Ingersoll Rand Heat Exchanger unit operating in Region13. Critical for process flow.",
+  "region": "Region13",
+  "tags": [
+    {
+      "name": "TAG-6662",
+      "alias": "Alias_TAG-6662",
+      "description": "Measurement tag for TAG-6662",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7083",
+      "alias": "Alias_TAG-7083",
+      "description": "Measurement tag for TAG-7083",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9049",
+      "alias": "Alias_TAG-9049",
+      "description": "Measurement tag for TAG-9049",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3811",
+      "alias": "Alias_TAG-3811",
+      "description": "Measurement tag for TAG-3811",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-672",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-672",
+      "alias": "S_Stream-672",
+      "datahubstreamid": "dh-95192",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-390",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-390",
+      "alias": "S_Stream-390",
+      "datahubstreamid": "dh-20645",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-198",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-198",
+      "alias": "S_Stream-198",
+      "datahubstreamid": "dh-28680",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2010-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

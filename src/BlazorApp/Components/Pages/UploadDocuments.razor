@@ -1,0 +1,261 @@
+@page "/upload-documents"
+@using BlazorApp.Services
+@using System.IO
+@inject IAzureSearchIndexService IndexService
+@inject ILogger<UploadDocuments> Logger
+@rendermode InteractiveServer
+
+<PageTitle>Upload Documents</PageTitle>
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mb-4">
+                <span class="bi bi-cloud-upload" aria-hidden="true"></span> Upload Documents
+            </h1>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <!-- Directory Selection -->
+            <div class="mb-3">
+                <label class="form-label">Directory Path</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" value="@_selectedDirectory" readonly />
+                    <button class="btn btn-secondary" @onclick="OpenDirectoryPicker">
+                        <span class="bi bi-folder2-open"></span> Pick Directory
+                    </button>
+                </div>
+                <div class="form-text">Default directory is the 'data' folder in the workspace root.</div>
+            </div>
+
+            <!-- Index Selection -->
+            <div class="mb-3">
+                <label class="form-label">Select Index</label>
+                <select class="form-select" @bind="_selectedIndex">
+                    <option value="">-- Select Index --</option>
+                    @foreach (var index in _indexes)
+                    {
+                        <option value="@index">@index</option>
+                    }
+                </select>
+            </div>
+
+            <!-- Upload Button -->
+            <button class="btn btn-primary" @onclick="HandleUpload" disabled="@IsUploadDisabled">
+                @if (_isUploading)
+                {
+                    <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                    <span>Uploading...</span>
+                }
+                else
+                {
+                    <span class="bi bi-upload me-2"></span>
+                    <span>Upload</span>
+                }
+            </button>
+
+            <!-- Status -->
+            @if (!string.IsNullOrEmpty(_statusMessage))
+            {
+                <div class="alert @_statusClass mt-3 alert-dismissible fade show">
+                    @_statusMessage
+                    <button type="button" class="btn-close" @onclick="() => _statusMessage = string.Empty"></button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Directory Picker Modal -->
+@if (_showDirectoryPicker)
+{
+    <div class="modal d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5)">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pick Directory</h5>
+                    <button type="button" class="btn-close" @onclick="CloseDirectoryPicker"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted small">Current: @_pickerCurrentPath</p>
+                    <div class="d-flex gap-2 mb-2">
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="NavigateUp" disabled="@IsRoot">
+                            <span class="bi bi-arrow-up"></span> Up
+                        </button>
+                    </div>
+                    <div class="list-group" style="max-height: 300px; overflow-y: auto;">
+                        @if (_pickerDirectories.Count == 0)
+                        {
+                            <div class="list-group-item text-muted">No subdirectories found.</div>
+                        }
+                        @foreach (var dir in _pickerDirectories)
+                        {
+                            <button class="list-group-item list-group-item-action" @onclick="() => NavigateTo(dir)">
+                                <span class="bi bi-folder-fill text-warning me-2"></span> @Path.GetFileName(dir)
+                            </button>
+                        }
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CloseDirectoryPicker">Cancel</button>
+                    <button type="button" class="btn btn-primary" @onclick="SelectCurrentDirectory">Select This Folder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private string _selectedDirectory = string.Empty;
+    private List<string> _indexes = new();
+    private string _selectedIndex = string.Empty;
+    private bool _isUploading = false;
+    private string _statusMessage = string.Empty;
+    private string _statusClass = string.Empty;
+
+    // Picker State
+    private bool _showDirectoryPicker = false;
+    private string _pickerCurrentPath = string.Empty;
+    private List<string> _pickerDirectories = new();
+
+    private bool IsUploadDisabled => string.IsNullOrEmpty(_selectedDirectory) || string.IsNullOrEmpty(_selectedIndex) || _isUploading;
+    private bool IsRoot => string.IsNullOrEmpty(_pickerCurrentPath) || Path.GetDirectoryName(_pickerCurrentPath) == null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // Try to locate the 'data' folder relative to the app
+            // Assuming app runs in src/BlazorApp, data is in ../../data
+            var currentDir = Directory.GetCurrentDirectory();
+            // Check if we are in src/BlazorApp or root
+            var potentialDataPath = Path.Combine(currentDir, "data");
+            if (!Directory.Exists(potentialDataPath))
+            {
+                potentialDataPath = Path.Combine(currentDir, "..", "..", "data");
+            }
+            
+            if (Directory.Exists(potentialDataPath))
+            {
+                _selectedDirectory = Path.GetFullPath(potentialDataPath);
+            }
+            else
+            {
+                _selectedDirectory = currentDir; // Fallback
+            }
+
+            _indexes = await IndexService.ListIndexesAsync();
+        }
+        catch (Exception ex)
+        {
+            ShowError($"Error initializing: {ex.Message}");
+        }
+    }
+
+    private void OpenDirectoryPicker()
+    {
+        _pickerCurrentPath = _selectedDirectory;
+        LoadPickerDirectories();
+        _showDirectoryPicker = true;
+    }
+
+    private void CloseDirectoryPicker()
+    {
+        _showDirectoryPicker = false;
+    }
+
+    private void LoadPickerDirectories()
+    {
+        try
+        {
+            if (Directory.Exists(_pickerCurrentPath))
+            {
+                _pickerDirectories = Directory.GetDirectories(_pickerCurrentPath).ToList();
+            }
+            else
+            {
+                _pickerDirectories = new List<string>();
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error listing directories");
+            _pickerDirectories = new List<string>();
+        }
+    }
+
+    private void NavigateTo(string path)
+    {
+        _pickerCurrentPath = path;
+        LoadPickerDirectories();
+    }
+
+    private void NavigateUp()
+    {
+        var parent = Directory.GetParent(_pickerCurrentPath);
+        if (parent != null)
+        {
+            _pickerCurrentPath = parent.FullName;
+            LoadPickerDirectories();
+        }
+    }
+
+    private void SelectCurrentDirectory()
+    {
+        _selectedDirectory = _pickerCurrentPath;
+        CloseDirectoryPicker();
+    }
+
+    private async Task HandleUpload()
+    {
+        _isUploading = true;
+        _statusMessage = string.Empty;
+
+        try
+        {
+            if (!Directory.Exists(_selectedDirectory))
+            {
+                ShowError("Selected directory does not exist.");
+                return;
+            }
+
+            var files = Directory.GetFiles(_selectedDirectory, "*.json");
+            if (files.Length == 0)
+            {
+                ShowError("No JSON files found in the selected directory.");
+                return;
+            }
+
+            var jsonDocs = new List<string>();
+            foreach (var file in files)
+            {
+                jsonDocs.Add(await File.ReadAllTextAsync(file));
+            }
+
+            await IndexService.UploadDocumentsAsync(_selectedIndex, jsonDocs);
+            ShowSuccess($"Successfully uploaded {files.Length} documents to index '{_selectedIndex}'.");
+        }
+        catch (Exception ex)
+        {
+            ShowError($"Upload failed: {ex.Message}");
+        }
+        finally
+        {
+            _isUploading = false;
+        }
+    }
+
+    private void ShowError(string message)
+    {
+        _statusMessage = message;
+        _statusClass = "alert-danger";
+    }
+
+    private void ShowSuccess(string message)
+    {
+        _statusMessage = message;
+        _statusClass = "alert-success";
+    }
+}

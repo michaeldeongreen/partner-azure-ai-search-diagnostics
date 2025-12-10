@@ -1,0 +1,78 @@
+{
+  "id": "doc-027",
+  "name": "Turbine K027",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Turbine designed for extreme conditions in Region10.",
+  "region": "Region10",
+  "tags": [
+    {
+      "name": "TAG-3700",
+      "alias": "Alias_TAG-3700",
+      "description": "Measurement tag for TAG-3700",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7731",
+      "alias": "Alias_TAG-7731",
+      "description": "Measurement tag for TAG-7731",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7052",
+      "alias": "Alias_TAG-7052",
+      "description": "Measurement tag for TAG-7052",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-540",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-540",
+      "alias": "S_Stream-540",
+      "datahubstreamid": "dh-30736",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-885",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-885",
+      "alias": "S_Stream-885",
+      "datahubstreamid": "dh-95364",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2021-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

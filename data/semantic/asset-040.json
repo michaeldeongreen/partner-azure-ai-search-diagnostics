@@ -1,0 +1,69 @@
+{
+  "id": "doc-040",
+  "name": "Compressor O040",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "A high-efficiency compressor manufactured by Ingersoll Rand. Located in Region01.",
+  "region": "Region01",
+  "tags": [
+    {
+      "name": "TAG-4390",
+      "alias": "Alias_TAG-4390",
+      "description": "Measurement tag for TAG-4390",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1965",
+      "alias": "Alias_TAG-1965",
+      "description": "Measurement tag for TAG-1965",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-522",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-522",
+      "alias": "S_Stream-522",
+      "datahubstreamid": "dh-24382",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-692",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-692",
+      "alias": "S_Stream-692",
+      "datahubstreamid": "dh-39729",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2013-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

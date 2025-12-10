@@ -1,0 +1,73 @@
+{
+  "id": "doc-050",
+  "name": "Separator H050",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Backup separator unit, model X-2000, located in Region16 sector.",
+  "region": "Region16",
+  "tags": [
+    {
+      "name": "TAG-5951",
+      "alias": "Alias_TAG-5951",
+      "description": "Measurement tag for TAG-5951",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6190",
+      "alias": "Alias_TAG-6190",
+      "description": "Measurement tag for TAG-6190",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8525",
+      "alias": "Alias_TAG-8525",
+      "description": "Measurement tag for TAG-8525",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4232",
+      "alias": "Alias_TAG-4232",
+      "description": "Measurement tag for TAG-4232",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1100",
+      "alias": "Alias_TAG-1100",
+      "description": "Measurement tag for TAG-1100",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2011-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

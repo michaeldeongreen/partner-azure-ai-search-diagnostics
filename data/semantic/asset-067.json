@@ -1,0 +1,69 @@
+{
+  "id": "doc-067",
+  "name": "Separator N067",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Separator designed for extreme conditions in Region12.",
+  "region": "Region12",
+  "tags": [
+    {
+      "name": "TAG-4606",
+      "alias": "Alias_TAG-4606",
+      "description": "Measurement tag for TAG-4606",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7440",
+      "alias": "Alias_TAG-7440",
+      "description": "Measurement tag for TAG-7440",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-343",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-343",
+      "alias": "S_Stream-343",
+      "datahubstreamid": "dh-36507",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-607",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-607",
+      "alias": "S_Stream-607",
+      "datahubstreamid": "dh-38712",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "GE"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Offshore Unit 1"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2014-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

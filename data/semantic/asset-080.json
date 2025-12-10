@@ -1,0 +1,73 @@
+{
+  "id": "doc-080",
+  "name": "Turbine P080",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Backup turbine unit, model X-2000, located in Region19 sector.",
+  "region": "Region19",
+  "tags": [
+    {
+      "name": "TAG-1922",
+      "alias": "Alias_TAG-1922",
+      "description": "Measurement tag for TAG-1922",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6801",
+      "alias": "Alias_TAG-6801",
+      "description": "Measurement tag for TAG-6801",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4231",
+      "alias": "Alias_TAG-4231",
+      "description": "Measurement tag for TAG-4231",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3929",
+      "alias": "Alias_TAG-3929",
+      "description": "Measurement tag for TAG-3929",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4570",
+      "alias": "Alias_TAG-4570",
+      "description": "Measurement tag for TAG-4570",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    }
+  ],
+  "streams": [],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2012-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

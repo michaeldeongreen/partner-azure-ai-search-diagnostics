@@ -1,0 +1,211 @@
+@page "/ai-search-index"
+@using BlazorApp.Services
+@using BlazorApp.Models
+@inject IAzureSearchIndexService IndexService
+@rendermode InteractiveServer
+
+<PageTitle>AI Search Index</PageTitle>
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mb-4">
+                <span class="bi bi-search" aria-hidden="true"></span> AI Search Index Management
+            </h1>
+            <p class="text-muted">Create Azure AI Search indexes by pasting JSON definitions below.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Index Definition (JSON)</h5>
+                </div>
+                <div class="card-body">
+                    <!-- Alert Messages -->
+                    @if (!string.IsNullOrEmpty(_alertMessage))
+                    {
+                        <div class="alert @_alertClass alert-dismissible fade show" role="alert">
+                            <strong>@_alertTitle</strong> @_alertMessage
+                            <button type="button" class="btn-close" @onclick="DismissAlert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <!-- JSON Input -->
+                    <div class="mb-3">
+                        <label for="indexJsonInput" class="form-label">
+                            Paste your index JSON here:
+                        </label>
+                        <textarea 
+                            id="indexJsonInput"
+                            class="form-control font-monospace @(_hasError ? "is-invalid" : "")"
+                            rows="20"
+                            @bind="_indexJson"
+                            @bind:event="oninput"
+                            placeholder='{ "name": "your-index-name", "fields": [...] }'
+                            spellcheck="false"></textarea>
+                        @if (_hasError)
+                        {
+                            <div class="invalid-feedback d-block">
+                                @_errorMessage
+                            </div>
+                        }
+                        <div class="form-text">
+                            Paste a valid Azure AI Search index definition in JSON format.
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="d-flex gap-2">
+                        <button 
+                            type="button" 
+                            class="btn btn-primary"
+                            @onclick="CreateIndexAsync"
+                            disabled="@_isProcessing">
+                            @if (_isProcessing)
+                            {
+                                <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                                <span>Creating...</span>
+                            }
+                            else
+                            {
+                                <span class="bi bi-plus-circle me-2" aria-hidden="true"></span>
+                                <span>Create Index</span>
+                            }
+                        </button>
+                        <button 
+                            type="button" 
+                            class="btn btn-outline-secondary"
+                            @onclick="ClearForm"
+                            disabled="@_isProcessing">
+                            <span class="bi bi-trash me-2" aria-hidden="true"></span>
+                            Clear
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instructions Card -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <span class="bi bi-info-circle me-2" aria-hidden="true"></span>
+                        Instructions
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li>Prepare your Azure AI Search index definition in JSON format</li>
+                        <li>Paste the JSON into the text area above</li>
+                        <li>Click the <strong>Create Index</strong> button</li>
+                        <li>Wait for confirmation that the index was created successfully</li>
+                    </ol>
+                    <div class="alert alert-info mt-3">
+                        <strong>Note:</strong> The index name must be unique. If an index with the same name already exists, the operation will fail.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string _indexJson = string.Empty;
+    private bool _isProcessing = false;
+    private bool _hasError = false;
+    private string _errorMessage = string.Empty;
+    private string _alertMessage = string.Empty;
+    private string _alertClass = string.Empty;
+    private string _alertTitle = string.Empty;
+
+    /// <summary>
+    /// Handles the Create Index button click.
+    /// Validates input and creates the index.
+    /// </summary>
+    private async Task CreateIndexAsync()
+    {
+        DismissAlert();
+        _hasError = false;
+        _errorMessage = string.Empty;
+
+        // Validate input is not empty
+        if (string.IsNullOrWhiteSpace(_indexJson))
+        {
+            ShowError("Index JSON cannot be empty. Please paste a valid JSON definition.");
+            return;
+        }
+
+        _isProcessing = true;
+
+        try
+        {
+            var result = await IndexService.CreateIndexAsync(_indexJson);
+
+            if (result.Success)
+            {
+                ShowSuccess($"Index '{result.IndexName}' created successfully!", result.Message);
+                _indexJson = string.Empty; // Clear the form on success
+            }
+            else
+            {
+                ShowError(result.Message);
+            }
+        }
+        catch (Exception ex)
+        {
+            ShowError($"An unexpected error occurred: {ex.Message}");
+        }
+        finally
+        {
+            _isProcessing = false;
+        }
+    }
+
+    /// <summary>
+    /// Clears the form and resets all state.
+    /// </summary>
+    private void ClearForm()
+    {
+        _indexJson = string.Empty;
+        DismissAlert();
+        _hasError = false;
+        _errorMessage = string.Empty;
+    }
+
+    /// <summary>
+    /// Dismisses the current alert message.
+    /// </summary>
+    private void DismissAlert()
+    {
+        _alertMessage = string.Empty;
+        _alertClass = string.Empty;
+        _alertTitle = string.Empty;
+    }
+
+    /// <summary>
+    /// Shows an error alert message.
+    /// </summary>
+    private void ShowError(string message)
+    {
+        _hasError = true;
+        _errorMessage = message;
+        _alertClass = "alert-danger";
+        _alertTitle = "Error!";
+        _alertMessage = message;
+    }
+
+    /// <summary>
+    /// Shows a success alert message.
+    /// </summary>
+    private void ShowSuccess(string title, string message)
+    {
+        _alertClass = "alert-success";
+        _alertTitle = title;
+        _alertMessage = message;
+    }
+}

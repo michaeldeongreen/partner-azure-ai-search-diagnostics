@@ -1,0 +1,71 @@
+{
+  "id": "doc-024",
+  "name": "Separator Z024",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Backup separator unit, model X-2000, located in Region18 sector.",
+  "region": "Region18",
+  "tags": [
+    {
+      "name": "TAG-4235",
+      "alias": "Alias_TAG-4235",
+      "description": "Measurement tag for TAG-4235",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-104",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-104",
+      "alias": "S_Stream-104",
+      "datahubstreamid": "dh-19116",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-455",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-455",
+      "alias": "S_Stream-455",
+      "datahubstreamid": "dh-78103",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-450",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-450",
+      "alias": "S_Stream-450",
+      "datahubstreamid": "dh-17501",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2018-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

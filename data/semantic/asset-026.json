@@ -1,0 +1,87 @@
+{
+  "id": "doc-026",
+  "name": "Valve V026",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "Backup valve unit, model X-2000, located in Region14 sector.",
+  "region": "Region14",
+  "tags": [
+    {
+      "name": "TAG-1648",
+      "alias": "Alias_TAG-1648",
+      "description": "Measurement tag for TAG-1648",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9764",
+      "alias": "Alias_TAG-9764",
+      "description": "Measurement tag for TAG-9764",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9862",
+      "alias": "Alias_TAG-9862",
+      "description": "Measurement tag for TAG-9862",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8719",
+      "alias": "Alias_TAG-8719",
+      "description": "Measurement tag for TAG-8719",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-339",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-339",
+      "alias": "S_Stream-339",
+      "datahubstreamid": "dh-16617",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-398",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-398",
+      "alias": "S_Stream-398",
+      "datahubstreamid": "dh-51899",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2010-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "doc-020",
+  "name": "Valve Q020",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "Standard valve for auxiliary support in Region18. Maintained by Atlas Copco.",
+  "region": "Region18",
+  "tags": [
+    {
+      "name": "TAG-9005",
+      "alias": "Alias_TAG-9005",
+      "description": "Measurement tag for TAG-9005",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7600",
+      "alias": "Alias_TAG-7600",
+      "description": "Measurement tag for TAG-7600",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4983",
+      "alias": "Alias_TAG-4983",
+      "description": "Measurement tag for TAG-4983",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-3026",
+      "alias": "Alias_TAG-3026",
+      "description": "Measurement tag for TAG-3026",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1770",
+      "alias": "Alias_TAG-1770",
+      "description": "Measurement tag for TAG-1770",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-865",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-865",
+      "alias": "S_Stream-865",
+      "datahubstreamid": "dh-55405",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2023-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

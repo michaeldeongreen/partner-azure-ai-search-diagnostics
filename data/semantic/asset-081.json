@@ -1,0 +1,58 @@
+{
+  "id": "doc-081",
+  "name": "Pump D081",
+  "assettypes": [
+    "Pump",
+    "Equipment"
+  ],
+  "description": "Backup pump unit, model X-2000, located in Region10 sector.",
+  "region": "Region10",
+  "tags": [
+    {
+      "name": "TAG-8911",
+      "alias": "Alias_TAG-8911",
+      "description": "Measurement tag for TAG-8911",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9934",
+      "alias": "Alias_TAG-9934",
+      "description": "Measurement tag for TAG-9934",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-391",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-391",
+      "alias": "S_Stream-391",
+      "datahubstreamid": "dh-60234",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2018-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

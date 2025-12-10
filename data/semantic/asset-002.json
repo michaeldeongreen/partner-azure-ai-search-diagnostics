@@ -1,0 +1,107 @@
+{
+  "id": "doc-002",
+  "name": "Turbine U002",
+  "assettypes": [
+    "Turbine",
+    "Equipment"
+  ],
+  "description": "Atlas Copco Turbine unit operating in Region03. Critical for process flow.",
+  "region": "Region03",
+  "tags": [
+    {
+      "name": "TAG-4167",
+      "alias": "Alias_TAG-4167",
+      "description": "Measurement tag for TAG-4167",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7249",
+      "alias": "Alias_TAG-7249",
+      "description": "Measurement tag for TAG-7249",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-1251",
+      "alias": "Alias_TAG-1251",
+      "description": "Measurement tag for TAG-1251",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2614",
+      "alias": "Alias_TAG-2614",
+      "description": "Measurement tag for TAG-2614",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8156",
+      "alias": "Alias_TAG-8156",
+      "description": "Measurement tag for TAG-8156",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-359",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-359",
+      "alias": "S_Stream-359",
+      "datahubstreamid": "dh-28678",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-778",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-778",
+      "alias": "S_Stream-778",
+      "datahubstreamid": "dh-38827",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-747",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-747",
+      "alias": "S_Stream-747",
+      "datahubstreamid": "dh-87237",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2018-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

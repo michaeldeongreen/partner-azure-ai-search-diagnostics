@@ -1,0 +1,89 @@
+{
+  "id": "doc-033",
+  "name": "Valve B033",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "Heavy-duty Valve designed for extreme conditions in Region16.",
+  "region": "Region16",
+  "tags": [
+    {
+      "name": "TAG-1487",
+      "alias": "Alias_TAG-1487",
+      "description": "Measurement tag for TAG-1487",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2835",
+      "alias": "Alias_TAG-2835",
+      "description": "Measurement tag for TAG-2835",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-8258",
+      "alias": "Alias_TAG-8258",
+      "description": "Measurement tag for TAG-8258",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-372",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-372",
+      "alias": "S_Stream-372",
+      "datahubstreamid": "dh-62073",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-383",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-383",
+      "alias": "S_Stream-383",
+      "datahubstreamid": "dh-57672",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-556",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-556",
+      "alias": "S_Stream-556",
+      "datahubstreamid": "dh-82296",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Mitsubishi"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2012-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

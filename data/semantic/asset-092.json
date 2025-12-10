@@ -1,0 +1,78 @@
+{
+  "id": "doc-092",
+  "name": "Separator B092",
+  "assettypes": [
+    "Separator",
+    "Equipment"
+  ],
+  "description": "Standard separator for auxiliary support in Region03. Maintained by Ingersoll Rand.",
+  "region": "Region03",
+  "tags": [
+    {
+      "name": "TAG-1764",
+      "alias": "Alias_TAG-1764",
+      "description": "Measurement tag for TAG-1764",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7828",
+      "alias": "Alias_TAG-7828",
+      "description": "Measurement tag for TAG-7828",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9671",
+      "alias": "Alias_TAG-9671",
+      "description": "Measurement tag for TAG-9671",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-116",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-116",
+      "alias": "S_Stream-116",
+      "datahubstreamid": "dh-99570",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-530",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-530",
+      "alias": "S_Stream-530",
+      "datahubstreamid": "dh-24209",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "Refinery B"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2017-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

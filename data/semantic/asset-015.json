@@ -1,0 +1,49 @@
+{
+  "id": "doc-015",
+  "name": "Heat Exchanger P015",
+  "assettypes": [
+    "Heat Exchanger",
+    "Equipment"
+  ],
+  "description": "Standard heat exchanger for auxiliary support in Region19. Maintained by Atlas Copco.",
+  "region": "Region19",
+  "tags": [
+    {
+      "name": "TAG-2004",
+      "alias": "Alias_TAG-2004",
+      "description": "Measurement tag for TAG-2004",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-789",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-789",
+      "alias": "S_Stream-789",
+      "datahubstreamid": "dh-69520",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2015-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "doc-013",
+  "name": "Valve C013",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "Atlas Copco Valve unit operating in Region14. Critical for process flow.",
+  "region": "Region14",
+  "tags": [
+    {
+      "name": "TAG-8482",
+      "alias": "Alias_TAG-8482",
+      "description": "Measurement tag for TAG-8482",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2022",
+      "alias": "Alias_TAG-2022",
+      "description": "Measurement tag for TAG-2022",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6002",
+      "alias": "Alias_TAG-6002",
+      "description": "Measurement tag for TAG-6002",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-4498",
+      "alias": "Alias_TAG-4498",
+      "description": "Measurement tag for TAG-4498",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-789",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-789",
+      "alias": "S_Stream-789",
+      "datahubstreamid": "dh-98278",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Atlas Copco"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "South Plant"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2022-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

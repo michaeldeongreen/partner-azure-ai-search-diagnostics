@@ -1,0 +1,107 @@
+{
+  "id": "doc-038",
+  "name": "Compressor D038",
+  "assettypes": [
+    "Compressor",
+    "Equipment"
+  ],
+  "description": "Standard compressor for auxiliary support in Region10. Maintained by Ingersoll Rand.",
+  "region": "Region10",
+  "tags": [
+    {
+      "name": "TAG-3509",
+      "alias": "Alias_TAG-3509",
+      "description": "Measurement tag for TAG-3509",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "Bar",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-2451",
+      "alias": "Alias_TAG-2451",
+      "description": "Measurement tag for TAG-2451",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5420",
+      "alias": "Alias_TAG-5420",
+      "description": "Measurement tag for TAG-5420",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6694",
+      "alias": "Alias_TAG-6694",
+      "description": "Measurement tag for TAG-6694",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-9604",
+      "alias": "Alias_TAG-9604",
+      "description": "Measurement tag for TAG-9604",
+      "source": "SCADA",
+      "tagtype": "Discrete",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-594",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-594",
+      "alias": "S_Stream-594",
+      "datahubstreamid": "dh-97769",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-526",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-526",
+      "alias": "S_Stream-526",
+      "datahubstreamid": "dh-65761",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-692",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-692",
+      "alias": "S_Stream-692",
+      "datahubstreamid": "dh-65570",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Ingersoll Rand"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2015-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}

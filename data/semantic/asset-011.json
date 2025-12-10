@@ -1,0 +1,98 @@
+{
+  "id": "doc-011",
+  "name": "Valve A011",
+  "assettypes": [
+    "Valve",
+    "Equipment"
+  ],
+  "description": "Siemens Valve unit operating in Region02. Critical for process flow.",
+  "region": "Region02",
+  "tags": [
+    {
+      "name": "TAG-5033",
+      "alias": "Alias_TAG-5033",
+      "description": "Measurement tag for TAG-5033",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "C",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-7091",
+      "alias": "Alias_TAG-7091",
+      "description": "Measurement tag for TAG-7091",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-6187",
+      "alias": "Alias_TAG-6187",
+      "description": "Measurement tag for TAG-6187",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "RPM",
+      "dimension": "1"
+    },
+    {
+      "name": "TAG-5057",
+      "alias": "Alias_TAG-5057",
+      "description": "Measurement tag for TAG-5057",
+      "source": "SCADA",
+      "tagtype": "Analog",
+      "engunit": "m3/h",
+      "dimension": "1"
+    }
+  ],
+  "streams": [
+    {
+      "name": "Stream-203",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-203",
+      "alias": "S_Stream-203",
+      "datahubstreamid": "dh-33764",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-507",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-507",
+      "alias": "S_Stream-507",
+      "datahubstreamid": "dh-14108",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    },
+    {
+      "name": "Stream-435",
+      "propertyname": "Value",
+      "description": "Real-time stream for Stream-435",
+      "alias": "S_Stream-435",
+      "datahubstreamid": "dh-59417",
+      "source": "PI System",
+      "tagtype": "Float",
+      "engunit": "various",
+      "dimension": "1"
+    }
+  ],
+  "metadata": [
+    {
+      "propertyname": "Manufacturer",
+      "propertyvalue": "Siemens"
+    },
+    {
+      "propertyname": "Location",
+      "propertyvalue": "North Platform"
+    },
+    {
+      "propertyname": "InstallationDate",
+      "propertyvalue": "2013-01-15"
+    }
+  ],
+  "@search.action": "upload"
+}
