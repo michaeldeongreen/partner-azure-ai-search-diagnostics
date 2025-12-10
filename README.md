@@ -2,6 +2,8 @@
 
 A Blazor application for testing and optimizing Azure AI Search with Azure OpenAI models, featuring Agentic Workflows and Hybrid Search.
 
+![Application Screenshot](assets/screenshot-001.png)
+
 ## Features
 
 ### 1. Agentic Chat
