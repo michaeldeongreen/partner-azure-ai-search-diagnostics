@@ -11,8 +11,8 @@ public class HybridFileService : IHybridFileService
         // Assuming the data folder is at the root of the repo, relative to the project
         // Adjust path logic as needed. Here we assume it's in a known location relative to ContentRoot
         // Or we can use an absolute path if we know it.
-        // Given the workspace structure: /home/mickgreen58/git/partner-azure-ai-search-diagnostics/data/hybrid
-        // And the app runs from: /home/mickgreen58/git/partner-azure-ai-search-diagnostics/src/BlazorApp
+        // Given the workspace structure: <repo_root>/data/hybrid
+        // And the app runs from: <repo_root>/src/BlazorApp
         
         // We'll try to find the data folder by going up two levels from ContentRoot
         var rootPath = Path.GetFullPath(Path.Combine(env.ContentRootPath, "..", ".."));
