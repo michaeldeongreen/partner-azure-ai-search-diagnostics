@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
 
-name: aveva-ai-search-optimize
+name: partner-azure-ai-search-diagnostics
 metadata:
-  template: aveva-ai-search-optimize@0.0.1
+  template: partner-azure-ai-search-diagnostics@0.0.1
 
 infra:
   provider: bicep
